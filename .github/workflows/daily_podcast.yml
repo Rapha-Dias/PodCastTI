@@ -41,4 +41,4 @@ jobs:
           git config --global user.email 'bot@podcastti.local'
           git add data/episodes.json rss.xml episodes/
           git commit -m "auto: Publicado novo episódio do PodCastTI [skip ci]" || exit 0
-          git push
+          git push origin HEAD:main
