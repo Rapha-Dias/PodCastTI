@@ -1,5 +1,5 @@
-import feedparser
 import re
+import feedparser
 
 FEEDS = [
     {"name": "freeCodeCamp PT", "url": "https://www.freecodecamp.org/portuguese/news/rss/"},
@@ -12,6 +12,9 @@ def clean_html(text: str) -> str:
     return cleaned.strip()[:300]
 
 def fetch_tech_news(max_items=4):
+    """
+    Coleta notícias de feeds RSS confiáveis sobre TI e programação.
+    """
     articles = []
     
     for feed_info in FEEDS:
@@ -22,7 +25,6 @@ def fetch_tech_news(max_items=4):
                 link = entry.link
                 summary = clean_html(entry.get("summary", entry.get("description", "")))
                 
-                # Filtra apenas notícias com temas relevantes para iniciantes se possível
                 articles.append({
                     "title": title,
                     "link": link,
@@ -32,11 +34,4 @@ def fetch_tech_news(max_items=4):
         except Exception as e:
             print(f"[!] Erro ao buscar feed {feed_info['name']}: {e}")
             
-    # Retorna os primeiros max_items
     return articles[:max_items]
-
-if __name__ == "__main__":
-    news = fetch_tech_news()
-    print(f"Coletadas {len(news)} notícias:")
-    for n in news:
-        print(f"- [{n['source']}] {n['title']} ({n['link']})")

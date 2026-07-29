@@ -53,7 +53,7 @@ def generate_script_with_ai(news_items):
         except Exception as e:
             print(f"[!] Erro ao chamar a API do Gemini: {e}. Usando gerador fallback.")
 
-    # Fallback caso a API Key não esteja configurada localmente
+    # Fallback
     print("[+] Montando roteiro com as notícias coletadas (Fallback)...")
     title = f"Destaques de TI: {news_items[0]['title'] if news_items else 'Lógica e Programação'}"
     summary = "Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!"
@@ -95,9 +95,3 @@ def generate_script_with_ai(news_items):
         "sources": sources,
         "script": "\n".join(script_lines)
     }
-
-if __name__ == "__main__":
-    from news_fetcher import fetch_tech_news
-    news = fetch_tech_news()
-    res = generate_script_with_ai(news)
-    print("Título gerado:", res["title"])

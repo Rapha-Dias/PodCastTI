@@ -1,14 +1,11 @@
 import os
-import json
-import re
-import asyncio
 import edge_tts
 
 VOICE_LEO = "pt-BR-AntonioNeural"
 VOICE_SARA = "pt-BR-FranciscaNeural"
 
-EPISODES_FILE = os.path.join(os.path.dirname(__file__), "episodes.json")
-OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "episodes")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUTPUT_DIR = os.path.join(BASE_DIR, "episodes")
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -21,9 +18,6 @@ async def synthesize_speech(text: str, voice: str) -> bytes:
     return bytes(audio_bytes)
 
 def parse_script(script_text: str):
-    """
-    Retorna uma lista de tuplas (speaker, text)
-    """
     lines = script_text.strip().split("\n")
     dialogues = []
     
@@ -32,7 +26,6 @@ def parse_script(script_text: str):
         if not line:
             continue
         
-        # Pula cabeçalhos de bloco ex: [00:00] INTRODUÇÃO
         if line.startswith("[") and "]" in line and ":" not in line:
             continue
             
@@ -67,31 +60,7 @@ async def generate_audio_for_episode(ep):
     file_size = len(full_audio)
     print(f"[OK] Arquivo de áudio salvo com sucesso: {filepath} ({file_size} bytes)")
     
-    # Atualiza meta no objeto do episódio
     ep["audio_url"] = f"https://rapha-dias.github.io/PodCastTI/episodes/{filename}"
     ep["audio_bytes"] = file_size
     ep["local_audio_path"] = filepath
     return filepath, file_size
-
-async def main():
-    if not os.path.exists(EPISODES_FILE):
-        print(f"[!] Arquivo {EPISODES_FILE} não encontrado.")
-        return
-
-    with open(EPISODES_FILE, "r", encoding="utf-8") as f:
-        episodes = json.load(f)
-
-    for ep in episodes:
-        await generate_audio_for_episode(ep)
-
-    # Salva json atualizado
-    with open(EPISODES_FILE, "w", encoding="utf-8") as f:
-        json.dump(episodes, f, ensure_ascii=False, indent=2)
-
-    # Atualiza RSS
-    import rss_generator
-    rss_generator.generate_rss_xml(episodes)
-    print("\n[OK] Todos os áudios gerados e RSS atualizado com sucesso!")
-
-if __name__ == "__main__":
-    asyncio.run(main())

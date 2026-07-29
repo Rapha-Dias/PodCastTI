@@ -3,7 +3,6 @@ import json
 from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
 
-# Configurações do Podcast
 PODCAST_TITLE = "PodCastTI - Tecnologia e Dados para Iniciantes"
 PODCAST_LINK = "https://rapha-dias.github.io/PodCastTI"
 PODCAST_DESCRIPTION = "O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados para quem está começando na faculdade ou transição de carreira."
@@ -12,12 +11,21 @@ PODCAST_IMAGE = "https://rapha-dias.github.io/PodCastTI/cover.jpg"
 PODCAST_CATEGORY = "Technology"
 PODCAST_LANGUAGE = "pt-br"
 
-EPISODES_FILE = os.path.join(os.path.dirname(__file__), "episodes.json")
-RSS_OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "rss.xml")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+EPISODES_FILE = os.path.join(DATA_DIR, "episodes.json")
+RSS_OUTPUT_FILE = os.path.join(BASE_DIR, "rss.xml")
+
+os.makedirs(DATA_DIR, exist_ok=True)
 
 def load_episodes():
+    # Tenta ler do diretório data/ ou da raiz (fallback)
     if os.path.exists(EPISODES_FILE):
         with open(EPISODES_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    old_file = os.path.join(BASE_DIR, "episodes.json")
+    if os.path.exists(old_file):
+        with open(old_file, "r", encoding="utf-8") as f:
             return json.load(f)
     return []
 
@@ -26,9 +34,6 @@ def save_episodes(episodes):
         json.dump(episodes, f, ensure_ascii=False, indent=2)
 
 def generate_rss_xml(episodes):
-    """
-    Gera um arquivo RSS.xml 100% compatível com o Spotify for Podcasters e Apple Podcasts.
-    """
     rss = ET.Element("rss", {
         "version": "2.0",
         "xmlns:itunes": "http://www.itunes.com/dtds/podcast-1.0.dtd",
@@ -54,12 +59,7 @@ def generate_rss_xml(episodes):
     for ep in episodes:
         item = ET.SubElement(channel, "item")
         ET.SubElement(item, "title").text = ep.get("title")
-        
-        # Descrição com Show Notes e Marcadores de Tempo
-        desc_html = f"<![CDATA[{ep.get('description_html', ep.get('summary', ''))}]]>"
-        desc_elem = ET.SubElement(item, "description")
-        desc_elem.text = ep.get("description", "")
-        
+        ET.SubElement(item, "description").text = ep.get("description", "")
         ET.SubElement(item, "guid").text = ep.get("guid")
         ET.SubElement(item, "pubDate").text = ep.get("pubDate")
         ET.SubElement(item, "itunes:duration").text = ep.get("duration", "00:20:00")
@@ -80,7 +80,6 @@ def add_new_episode(title, summary, script_text, audio_url, chapters, sources, a
     today_str = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
     guid = f"podcastti-ep{ep_num:03d}-{datetime.now().strftime('%Y%m%d')}"
     
-    # Formata Show Notes
     show_notes = f"{summary}\n\n📌 CAPÍTULOS DESTE EPISÓDIO:\n"
     for time_mark, ch_title in chapters:
         show_notes += f"{time_mark} - {ch_title}\n"
@@ -102,12 +101,7 @@ def add_new_episode(title, summary, script_text, audio_url, chapters, sources, a
         "script": script_text
     }
     
-    episodes.insert(0, new_ep) # Episódio mais recente no topo
+    episodes.insert(0, new_ep)
     save_episodes(episodes)
     generate_rss_xml(episodes)
     return new_ep
-
-if __name__ == "__main__":
-    # Teste de Inicialização do Feed
-    eps = load_episodes()
-    generate_rss_xml(eps)
