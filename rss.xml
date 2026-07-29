@@ -10,69 +10,6 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
-      <title>Ep 04: Destaques de TI: Ep. 53 Julia Labs - Hardware, leds e Projetos criativos</title>
-      <description>Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!
-
-📌 CAPÍTULOS DESTE EPISÓDIO:
-00:00 - Intro &amp; Destaques do Dia
-02:00 - Bloco 1: Ep. 53 Julia Labs - Hardware, leds 
-08:00 - Bloco 2: Ep. 52 Jessica Temporal - Como as a
-14:00 - Bloco 3: Ep. 51 Téo Calvo - O Mago das ciênc
-18:00 - Recapitulação &amp; Dicas Finais
-
-🔗 FONTES CITADAS:
-- freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep53/
-- freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep52/
-- freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep51/
-</description>
-      <guid>podcastti-ep004-20260728</guid>
-      <pubDate>Wed, 29 Jul 2026 00:06:30 +0000</pubDate>
-      <itunes:duration>00:20:00</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/temp.mp3" length="25000000" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Ep 03: Destaques de TI: Ep. 53 Julia Labs - Hardware, leds e Projetos criativos</title>
-      <description>Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!
-
-📌 CAPÍTULOS DESTE EPISÓDIO:
-00:00 - Intro &amp; Destaques do Dia
-02:00 - Bloco 1: Ep. 53 Julia Labs - Hardware, leds 
-08:00 - Bloco 2: Ep. 52 Jessica Temporal - Como as a
-14:00 - Bloco 3: Ep. 51 Téo Calvo - O Mago das ciênc
-18:00 - Recapitulação &amp; Dicas Finais
-
-🔗 FONTES CITADAS:
-- freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep53/
-- freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep52/
-- freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep51/
-</description>
-      <guid>podcastti-ep003-20260728</guid>
-      <pubDate>Wed, 29 Jul 2026 00:00:30 +0000</pubDate>
-      <itunes:duration>00:20:00</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep03_podcastti.mp3" length="25000000" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Ep 02: Estruturas de Decisão e Git: Como Tomar Escolhas no Código e Nunca Mais Perder seus Projetos</title>
-      <description>No segundo episódio do PodCastTI, Léo e Sara desmistificam como os programas tomam decisões com 'if/else' em Python, revelam a magia do Git/GitHub para salvar o progresso dos seus estudos de TI sem criar pastas como 'projeto_final_v2', e mostram ideias de projetos práticos para colocar a mão na massa!
-
-📌 CAPÍTULOS DESTE EPISÓDIO:
-00:00 - Intro &amp; O Drama das Versões de Arquivo
-02:00 - Bloco 1: Se, Senão e Estruturas Condicionais (Alura)
-08:00 - Bloco 2: Git e GitHub para Iniciantes (freeCodeCamp)
-14:00 - Bloco 3: 25 Projetos Práticos em Python (freeCodeCamp)
-18:00 - Recapitulação &amp; Dicas Finais
-
-🔗 FONTES CITADAS:
-- Alura - Estruturas Condicionais em Python: https://www.alura.com.br/artigos/estruturas-condicionais-python
-- freeCodeCamp - Guia de Git e GitHub para Iniciantes: https://www.freecodecamp.org/portuguese/news/o-guia-de-git-e-github-para-iniciantes/
-- freeCodeCamp - 25 Projetos em Python para Iniciantes: https://www.freecodecamp.org/portuguese/news/25-projetos-em-python-para-iniciantes-ideias-faceis-para-comecar-a-programar-em-python/
-</description>
-      <guid>podcastti-ep002-20260728</guid>
-      <pubDate>Tue, 28 Jul 2026 23:40:35 +0000</pubDate>
-      <itunes:duration>00:20:00</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep02_podcastti.mp3" length="1370160" type="audio/mpeg" />
-    </item>
-    <item>
       <title>Ep 01: Python vs SQL: O Guia de Sobrevivência para Iniciantes em TI</title>
       <description>No episódio de estreia do PodCastTI, Léo e Sara traduzem o 'tecniquês' para quem está começando em Análise de Dados e TI. Explicamos o que são variáveis em Python, como o SQL se comunica com bancos de dados e como praticar direto no navegador com o Kaggle Learn!
 
@@ -89,9 +26,9 @@
 - Kaggle Learn - Python na Prática: https://www.kaggle.com/learn/python
 </description>
       <guid>podcastti-ep001-20260728</guid>
-      <pubDate>Tue, 28 Jul 2026 23:38:30 +0000</pubDate>
+      <pubDate>Wed, 29 Jul 2026 00:09:35 +0000</pubDate>
       <itunes:duration>00:20:00</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3" length="1162224" type="audio/mpeg" />
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3" length="1256256" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
