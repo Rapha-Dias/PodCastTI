@@ -20,7 +20,11 @@
 No episódio completo de estreia do PodCastTI (20 minutos), Léo e Sara traduzem tudo o que você precisa saber no início da faculdade ou transição de carreira: como funcionam as variáveis e algoritmos em Python, como estruturar consultas SQL sem medo, dicas práticas no Kaggle Learn e o mapa mental para construir seus primeiros projetos.
 
 ⏱️ CAPÍTULOS E MARCAS DE TEMPO:
-• 00:00 - Cap 01: Intro
+• 00:00 - Cap 01: E O DESAFIO DO PRIMEIRO ANO EM TI
+• 00:34 - Cap 02: LÓGICA DE PROGRAMAÇÃO, PYTHON E VARIÁVEIS NA PRÁTICA
+• 01:21 - Cap 03: BANCOS DE DADOS E A LINGUAGEM SQL
+• 02:09 - Cap 04: FERRAMENTAS PRÁTICAS, KAGGLE LEARN E METODOLOGIA DE ESTUDOS
+• 02:39 - Cap 05: RECAPITULAÇÃO, PROJETOS PRÁTICOS E ENCERRAMENTO
 
 🔗 FONTES CITADAS E LINKS RECOMENDADOS:
 • freeCodeCamp - Guia de Python para Iniciantes: https://www.freecodecamp.org/portuguese/news/o-guia-de-python-para-iniciantes/
@@ -29,8 +33,8 @@ No episódio completo de estreia do PodCastTI (20 minutos), Léo e Sara traduzem
 </description>
       <guid>podcastti-ep001-20260729-full</guid>
       <pubDate>Wed, 29 Jul 2026 03:00:00 +0000</pubDate>
-      <itunes:duration>00:02:56</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3" length="2820960" type="audio/mpeg" />
+      <itunes:duration>00:02:52</itunes:duration>
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3" length="2761344" type="audio/mpeg" />
     </item>
   </channel>
 </rss>

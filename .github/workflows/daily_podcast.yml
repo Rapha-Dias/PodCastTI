@@ -40,8 +40,9 @@ jobs:
         run: |
           git config --global user.name 'PodCastTI Bot'
           git config --global user.email 'bot@podcastti.local'
+          git fetch origin main
+          git reset --soft origin/main
           git add data/episodes.json rss.xml episodes/
           git commit -m "auto: Publicado novo episódio do PodCastTI [skip ci]" || exit 0
-          git pull --rebase origin main || true
           git push origin HEAD:main
 
