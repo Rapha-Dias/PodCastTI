@@ -10,23 +10,38 @@ OUTPUT_DIR = os.path.join(BASE_DIR, "episodes")
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Gera um buffer curto de silêncio de ~350ms em quadros MP3 silenciosos
-SILENCE_MP3_CHUNK = b'\xff\xfb\x90\xc4\x00\x00\x00\x00\x00\x00\x00\x00' * 12
-
 def clean_text_for_speech(text: str) -> str:
+    """
+    Limpa rigorosamente o texto do roteiro antes de enviar para a síntese de voz TTS.
+    Garante que URLs, tags HTML, marcas de tempo, colchetes, formatações Markdown
+    e códigos nunca sejam lidos como fala pelo sintetizador de voz.
+    """
+    if not text:
+        return ""
+    
+    # 1. Remove blocos de código Markdown (```...```)
     clean = re.sub(r'```[\s\S]*?```', '', text)
-    clean = re.sub(r'https?://\S+', '', clean)
-    clean = re.sub(r'\((Risos|Pensativo|Pausa)\)', '...', clean, flags=re.IGNORECASE)
-    clean = re.sub(r'\([^\)]+\)', '', clean)
+    # 2. Remove URLs completas (http, https, www, etc.)
+    clean = re.sub(r'https?://\S+|www\.\S+', '', clean)
+    # 3. Remove marcas de tempo tipo [00:00], [04:30], [18:00]
     clean = re.sub(r'\[\d{1,2}:\d{2}\]', '', clean)
+    # 4. Remove colchetes e chaves com qualquer conteúdo
+    clean = re.sub(r'\[[^\]]*\]|\{[^\}]*\}', '', clean)
+    # 5. Remove tags HTML/XML
     clean = re.sub(r'<[^>]+>', '', clean)
-    clean = re.sub(r'[\*\`\_]', '', clean)
+    # 6. Remove marcações parentéticas de expressão (ex: (Risos), (Pausa))
+    clean = re.sub(r'\([^\)]+\)', '', clean)
+    # 7. Remove caracteres de formatação Markdown (*, _, `, #, ~, >)
+    clean = re.sub(r'[\*\`\_\#\~\>]', '', clean)
+    # 8. Limpa entidades HTML
+    clean = clean.replace("&quot;", '"').replace("&amp;", 'e').replace("&lt;", '').replace("&gt;", '')
+    # 9. Normaliza múltiplos espaços e quebras de linha
     clean = re.sub(r'\s+', ' ', clean).strip()
     return clean
 
 def strip_id3(data: bytes) -> bytes:
     """
-    Remove cabeçalhos ID3v2 do áudio sintetizado para evitar estalos ou metadata corrompida.
+    Remove cabeçalhos ID3v2 do áudio sintetizado para manter o fluxo MP3 100% limpo e válido.
     """
     while data.startswith(b'ID3') and len(data) >= 10:
         size_bytes = data[6:10]
@@ -50,7 +65,7 @@ async def synthesize_speech(text: str, voice: str) -> bytes:
     if not clean_text:
         return b""
     
-    # Parâmetros de modulação de voz diferenciada
+    # Parâmetros de voz natural e expressiva
     rate = "+2%" if voice == VOICE_LEO else "+0%"
     pitch = "+1Hz" if voice == VOICE_LEO else "-1Hz"
     
@@ -110,7 +125,7 @@ async def generate_audio_for_episode(ep):
     filename = f"ep{ep_id:02d}_podcastti.mp3"
     filepath = os.path.join(OUTPUT_DIR, filename)
     
-    print(f"\n[+] Sintetizando vozes neurais com pausas naturais para o Episódio {ep_id}: {ep['title']}...")
+    print(f"\n[+] Sintetizando áudio limpo de alta fidelidade para o Episódio {ep_id}: {ep['title']}...")
     
     sections = parse_sections(ep["script"])
     full_audio = bytearray()
@@ -134,8 +149,7 @@ async def generate_audio_for_episode(ep):
             chunk_audio = await synthesize_speech(text, voice)
             if chunk_audio:
                 full_audio.extend(chunk_audio)
-                full_audio.extend(SILENCE_MP3_CHUNK) # Pausa natural entre turnos de fala
-                section_bytes += len(chunk_audio) + len(SILENCE_MP3_CHUNK)
+                section_bytes += len(chunk_audio)
             
         current_time_seconds += (section_bytes / BYTES_PER_SECOND)
         
@@ -146,7 +160,7 @@ async def generate_audio_for_episode(ep):
     total_seconds = file_size / BYTES_PER_SECOND
     duration_str = format_duration_hhmmss(total_seconds)
     
-    print(f"[OK] Áudio gerado com sucesso: {filepath} ({file_size} bytes, Duração estimada: {duration_str})")
+    print(f"[OK] Áudio MP3 limpo gerado com sucesso: {filepath} ({file_size} bytes, Duração: {duration_str})")
     
     ep["audio_url"] = f"https://rapha-dias.github.io/PodCastTI/episodes/{filename}"
     ep["audio_bytes"] = file_size
@@ -154,7 +168,7 @@ async def generate_audio_for_episode(ep):
     ep["local_audio_path"] = filepath
     ep["chapters"] = dynamic_chapters
     
-    # Atualiza as show notes do episódio
+    # Atualiza as show notes do episódio sem tags ou lixo de código
     show_notes = f"🎙️ SOBRE ESTE EPISÓDIO:\n{ep['summary']}\n\n⏱️ CAPÍTULOS E MARCAS DE TEMPO:\n"
     for idx, (time_mark, ch_title) in enumerate(dynamic_chapters, 1):
         show_notes += f"• {time_mark} - Cap {idx:02d}: {ch_title}\n"
