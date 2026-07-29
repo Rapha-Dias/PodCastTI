@@ -107,7 +107,9 @@ def add_new_episode(title, summary, script_text, audio_url, chapters, sources, a
         "audio_bytes": audio_bytes,
         "pubDate": today_str,
         "duration": "00:20:00",
-        "script": script_text
+        "script": script_text,
+        "sources": sources,
+        "chapters": chapters
     }
     
     episodes.insert(0, new_ep)

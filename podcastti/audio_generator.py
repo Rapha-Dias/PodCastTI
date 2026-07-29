@@ -37,7 +37,7 @@ async def synthesize_speech(text: str, voice: str) -> bytes:
 
 def parse_sections(script_text: str):
     """
-    Divide o roteiro por seções/blocos [MM:SS] TÍTULO
+    Divide o roteiro por seções/blocos [MM:SS] TÍTULO e falas dos apresentadores Léo e Sara.
     """
     lines = script_text.strip().split("\n")
     sections = []
@@ -49,18 +49,21 @@ def parse_sections(script_text: str):
         if not line:
             continue
             
-        if line.startswith("[") and "]" in line and ":" not in line:
+        # Verifica primeiro se é uma fala de apresentador (ex: Léo:, Sara:, **Léo**:, etc.)
+        speaker_match = re.match(r'^(?:\*\*|\*)?\s*(Léo|Leo|Sara)\s*(?:\*\*|\*)?\s*:\s*(.*)', line, re.IGNORECASE)
+        if speaker_match:
+            raw_speaker = speaker_match.group(1).lower()
+            speaker = "Léo" if "leo" in raw_speaker else "Sara"
+            text = speaker_match.group(2).strip()
+            if text:
+                current_lines.append((speaker, text))
+        elif line.startswith("[") and "]" in line:
             if current_lines:
                 sections.append((current_title, current_lines))
                 current_lines = []
-            # Extrai título da seção
-            current_title = line.split("]", 1)[1].strip()
-        elif line.startswith("Léo:") or line.startswith("Léo :"):
-            text = line.split(":", 1)[1].strip()
-            current_lines.append(("Léo", text))
-        elif line.startswith("Sara:") or line.startswith("Sara :"):
-            text = line.split(":", 1)[1].strip()
-            current_lines.append(("Sara", text))
+            # Extrai título da seção após o fecha-colchete
+            title_part = line.split("]", 1)[1].strip()
+            current_title = title_part if title_part else "Bloco"
             
     if current_lines:
         sections.append((current_title, current_lines))

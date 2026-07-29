@@ -60,9 +60,24 @@ def generate_script_with_ai(news_items):
                 contents=f"{PROMPT_RULES}\n\nAqui estão as notícias reais do dia:\n{formatted_news}",
                 config={"response_mime_type": "application/json"}
             )
-            data = json.loads(response.text)
-            print("[OK] Roteiro gerado com sucesso via Gemini AI!")
-            return data
+            raw_text = response.text.strip() if response.text else ""
+            if raw_text.startswith("```"):
+                raw_text = re.sub(r'^```(?:json)?\s*', '', raw_text, flags=re.IGNORECASE)
+                raw_text = re.sub(r'\s*```$', '', raw_text)
+            data = json.loads(raw_text)
+            
+            # Mapeia ou garante chaves obrigatórias
+            if isinstance(data, dict):
+                script_text = data.get("script") or data.get("roteiro") or data.get("dialogo")
+                title_text = data.get("title") or data.get("titulo") or f"Destaques de TI: {news_items[0]['title'] if news_items else 'Tecnologia'}"
+                if script_text:
+                    data["script"] = script_text
+                    data["title"] = title_text
+                    data.setdefault("summary", "Neste episódio do PodCastTI, analisamos as principais novidades de TI para estudantes!")
+                    data.setdefault("chapters", [["00:00", "Intro & Destaques do Dia"]])
+                    data.setdefault("sources", [[item['source'], item['link']] for item in news_items])
+                    print("[OK] Roteiro gerado com sucesso via Gemini AI!")
+                    return data
         except Exception as e:
             print(f"[!] Erro ao chamar a API do Gemini: {e}. Usando gerador fallback.")
 
