@@ -15,16 +15,16 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
-      <title>Ep 02: Destaques de TI: Ep. 53 Julia Labs - Hardware, leds e Projetos criativos</title>
+      <title>Ep 01: Destaques de TI: Ep. 53 Julia Labs - Hardware, leds e Projetos criativos</title>
       <description>🎙️ SOBRE ESTE EPISÓDIO:
 Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!
 
 ⏱️ CAPÍTULOS E MARCAS DE TEMPO:
 • 00:00 - Cap 01: INTRODUÇÃO
-• 00:06 - Cap 02: EP. 53 JULIA LABS - HARDWARE, LEDS E PROJETOS CRIATIVOS
-• 00:23 - Cap 03: EP. 52 JESSICA TEMPORAL - COMO AS APLICAÇÕES SABEM QUEM É VOCÊ?
-• 00:41 - Cap 04: EP. 51 TÉO CALVO - O MAGO DAS CIÊNCIAS DE DADOS
-• 00:58 - Cap 05: ENCERRAMENTO E DICAS
+• 00:09 - Cap 02: EP. 53 JULIA LABS - HARDWARE, LEDS E PROJETOS CRIATIVOS
+• 00:30 - Cap 03: EP. 52 JESSICA TEMPORAL - COMO AS APLICAÇÕES SABEM QUEM É VOCÊ?
+• 00:52 - Cap 04: EP. 51 TÉO CALVO - O MAGO DAS CIÊNCIAS DE DADOS
+• 01:13 - Cap 05: ENCERRAMENTO E DICAS
 
 🔗 FONTES CITADAS E LINKS RECOMENDADOS:
 • freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep53/
@@ -33,34 +33,10 @@ Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutor
 </description>
       <itunes:summary>Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!</itunes:summary>
       <itunes:explicit>no</itunes:explicit>
-      <guid>podcastti-ep002-20260729</guid>
-      <pubDate>Wed, 29 Jul 2026 12:04:19 +0000</pubDate>
-      <itunes:duration>00:01:02</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep02_podcastti.mp3" length="1003104" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Ep 01: Guia Definitivo de TI &amp; Dados: Python vs SQL, Algoritmos e Carreira para Iniciantes</title>
-      <description>🎙️ SOBRE ESTE EPISÓDIO:
-No episódio completo de estreia do PodCastTI (18 a 22 minutos), Léo e Sara traduzem tudo o que você precisa saber no início da faculdade ou transição de carreira: como funcionam as variáveis e algoritmos em Python, como estruturar consultas SQL sem medo, dicas práticas no Kaggle Learn e o mapa mental para construir seus primeiros projetos.
-
-⏱️ CAPÍTULOS E MARCAS DE TEMPO:
-• 00:00 - Cap 01: E O DESAFIO DO PRIMEIRO ANO EM TI
-• 00:40 - Cap 02: LÓGICA DE PROGRAMAÇÃO, PYTHON E VARIÁVEIS NA PRÁTICA
-• 01:27 - Cap 03: BANCOS DE DADOS E A LINGUAGEM SQL
-• 02:16 - Cap 04: FERRAMENTAS PRÁTICAS, KAGGLE LEARN E METODOLOGIA DE ESTUDOS
-• 02:47 - Cap 05: RECAPITULAÇÃO, PROJETOS PRÁTICOS E ENCERRAMENTO
-
-🔗 FONTES CITADAS E LINKS RECOMENDADOS:
-• freeCodeCamp - Guia de Python para Iniciantes: https://www.freecodecamp.org/portuguese/news/o-guia-de-python-para-iniciantes/
-• Alura - O que é SQL?: https://www.alura.com.br/artigos/o-que-e-sql
-• Kaggle Learn - Cursos Gratuitos de Python e SQL: https://www.kaggle.com/learn
-</description>
-      <itunes:summary>No episódio completo de estreia do PodCastTI (18 a 22 minutos), Léo e Sara traduzem tudo o que você precisa saber no início da faculdade ou transição de carreira: como funcionam as variáveis e algoritmos em Python, como estruturar consultas SQL sem medo, dicas práticas no Kaggle Learn e o mapa mental para construir seus primeiros projetos.</itunes:summary>
-      <itunes:explicit>no</itunes:explicit>
-      <guid>podcastti-ep001-20260729-full</guid>
-      <pubDate>Wed, 29 Jul 2026 03:00:00 +0000</pubDate>
-      <itunes:duration>00:03:00</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3" length="2884752" type="audio/mpeg" />
+      <guid>podcastti-ep001-20260729</guid>
+      <pubDate>Wed, 29 Jul 2026 18:49:47 +0000</pubDate>
+      <itunes:duration>00:01:19</itunes:duration>
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3" length="1266480" type="audio/mpeg" />
     </item>
   </channel>
 </rss>

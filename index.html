@@ -47,20 +47,20 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 850px;
             width: 100%;
         }
 
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
         }
 
         .cover-img {
-            width: 220px;
-            height: 220px;
+            width: 200px;
+            height: 200px;
             border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(56, 189, 248, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(56, 189, 248, 0.25);
             margin-bottom: 24px;
             transition: transform 0.3s ease;
         }
@@ -71,7 +71,7 @@
 
         h1 {
             font-family: 'Outfit', sans-serif;
-            font-size: 2.5rem;
+            font-size: 2.6rem;
             font-weight: 800;
             background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
             -webkit-background-clip: text;
@@ -99,7 +99,7 @@
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid var(--card-border);
             border-radius: 20px;
-            padding: 30px;
+            padding: 28px;
             margin-bottom: 24px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
@@ -111,13 +111,14 @@
             margin-bottom: 16px;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             gap: 10px;
         }
 
         p.description {
             color: var(--text-muted);
             line-height: 1.7;
-            font-size: 1.05rem;
+            font-size: 1.02rem;
             margin-bottom: 20px;
         }
 
@@ -125,7 +126,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 16px;
-            margin-top: 20px;
+            margin-top: 15px;
         }
 
         @media (max-width: 600px) {
@@ -148,23 +149,148 @@
         }
 
         .host-role {
-            font-size: 0.85rem;
+            font-size: 0.88rem;
             color: var(--text-muted);
             line-height: 1.4;
         }
 
-        .audio-player-container {
-            margin-top: 20px;
-            background: rgba(15, 23, 42, 0.8);
-            padding: 16px;
-            border-radius: 16px;
-            border: 1px solid rgba(56, 189, 248, 0.2);
+        /* Custom Interactive Audio Player */
+        .player-box {
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            border-radius: 18px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        .episode-header {
+            margin-bottom: 16px;
+        }
+
+        .ep-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #f8fafc;
+            margin-bottom: 6px;
+        }
+
+        .ep-summary {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.5;
         }
 
         audio {
             width: 100%;
             height: 48px;
             border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        /* Chapter Buttons Grid */
+        .chapters-container {
+            margin-top: 20px;
+            background: rgba(15, 23, 42, 0.5);
+            border-radius: 14px;
+            padding: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .chapters-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #38bdf8;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .chapter-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .chapter-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 14px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: left;
+            color: #f8fafc;
+            font-size: 0.9rem;
+        }
+
+        .chapter-item:hover {
+            background: rgba(56, 189, 248, 0.15);
+            border-color: rgba(56, 189, 248, 0.4);
+            transform: translateX(4px);
+        }
+
+        .chapter-time {
+            background: rgba(56, 189, 248, 0.2);
+            color: #38bdf8;
+            font-weight: 700;
+            font-family: monospace;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+
+        /* History List */
+        .history-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .history-item {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .history-item:hover {
+            border-color: rgba(56, 189, 248, 0.3);
+        }
+
+        .history-info h4 {
+            font-size: 1rem;
+            color: #f8fafc;
+            margin-bottom: 4px;
+        }
+
+        .history-info p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .btn-play-mini {
+            background: rgba(56, 189, 248, 0.15);
+            color: #38bdf8;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 8px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-play-mini:hover {
+            background: #38bdf8;
+            color: #0b0f19;
         }
 
         .btn-group {
@@ -216,9 +342,10 @@
             font-size: 0.85rem;
         }
 
-        footer a {
-            color: #38bdf8;
-            text-decoration: none;
+        .empty-state {
+            text-align: center;
+            padding: 30px 20px;
+            color: var(--text-muted);
         }
     </style>
 </head>
@@ -231,38 +358,40 @@
                 <span>⏰</span> Novos episódios diariamente às 07:00 da manhã (Brasília)
             </div>
             <p class="description">
-                O podcast diário que traduz o "tecniquês" em conversas leves e práticas sobre <strong>Python, SQL, Lógica de Programação e Ciência de Dados</strong> para quem está começando na faculdade ou transição de carreira.
+                O podcast diário que traduz o "tecniquês" em conversas leves e práticas sobre <strong>Python, SQL, Lógica de Programação e Ciência de Dados</strong> para estudantes e iniciantes.
             </p>
         </header>
 
         <main>
             <!-- Card de Apresentadores -->
             <section class="card">
-                <h2 class="card-title">🎙️ Sobre os Apresentadores</h2>
+                <h2 class="card-title">🎙️ Apresentadores & Vozes Neurais</h2>
                 <div class="hosts-grid">
                     <div class="host-box">
-                        <div class="host-name">👨‍💻 Léo (Voz Neural Antonio)</div>
-                        <div class="host-role">Estudante curioso de TI. Faz as perguntas reais de leigo e representa as dúvidas de quem está começando na faculdade.</div>
+                        <div class="host-name">👨‍💻 Léo (Voz Antonio Neural)</div>
+                        <div class="host-role">Estudante curioso de TI. Faz perguntas simples de leigo e representa as dúvidas reais de quem está no início dos estudos.</div>
                     </div>
                     <div class="host-box">
-                        <div class="host-name">👩‍💻 Sara (Voz Neural Francisca)</div>
-                        <div class="host-role">Tutora especialista em dados. Explica conceitos complexos com analogias simples do cotidiano e dá dicas práticas de código.</div>
+                        <div class="host-name">👩‍💻 Sara (Voz Francisca Neural)</div>
+                        <div class="host-role">Tutora especialista em dados. Explica conceitos complexos com analogias do cotidiano e dá dicas práticas de código.</div>
                     </div>
                 </div>
             </section>
 
-            <!-- Card do Player -->
-            <section class="card">
+            <!-- Player do Episódio Mais Recente com Capítulos Clicáveis -->
+            <section class="card" id="player-card">
                 <h2 class="card-title">📻 Ouça o Episódio Mais Recente</h2>
-                <p class="description" style="margin-bottom: 12px; font-weight: 500; color: #f8fafc;">
-                    Ep 01: Guia Definitivo de TI & Dados: Python vs SQL, Algoritmos e Carreira
-                </p>
-                <div class="audio-player-container">
-                    <audio controls preload="metadata">
-                        <source src="episodes/ep01_podcastti.mp3" type="audio/mpeg">
-                        Seu navegador não suporta o elemento de áudio.
-                    </audio>
+                <div id="player-content">
+                    <div class="empty-state">
+                        ⏳ <em>Nenhum episódio no histórico. Execute <code>python main.py</code> para gerar o primeiro episódio do zero!</em>
+                    </div>
                 </div>
+            </section>
+
+            <!-- Histórico de Episódios -->
+            <section class="card" id="history-card" style="display: none;">
+                <h2 class="card-title">📚 Episódios Anteriores</h2>
+                <div id="history-content" class="history-list"></div>
             </section>
 
             <!-- Botões de Ação -->
@@ -280,5 +409,96 @@
             <p>© 2026 PodCastTI • Desenvolvido com Python, Edge-TTS & GitHub Actions</p>
         </footer>
     </div>
+
+    <script>
+        let allEpisodes = [];
+
+        function parseTimestampToSeconds(ts) {
+            const parts = ts.split(':').map(Number);
+            if (parts.length === 2) return parts[0] * 60 + parts[1];
+            if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
+            return 0;
+        }
+
+        function playChapter(seconds) {
+            const player = document.getElementById('main-audio-player');
+            if (player) {
+                player.currentTime = seconds;
+                player.play();
+            }
+        }
+
+        function loadEpisodeIntoPlayer(ep) {
+            const container = document.getElementById('player-content');
+            
+            let chaptersHtml = '';
+            if (ep.chapters && ep.chapters.length > 0) {
+                chaptersHtml = `
+                    <div class="chapters-container">
+                        <div class="chapters-title">⏱️ Capítulos Clicáveis (Pule para o Assunto):</div>
+                        <div class="chapter-list">
+                            ${ep.chapters.map(ch => {
+                                const sec = parseTimestampToSeconds(ch[0]);
+                                return `
+                                    <button class="chapter-item" onclick="playChapter(${sec})">
+                                        <span class="chapter-time">${ch[0]}</span>
+                                        <span class="chapter-text">${ch[1]}</span>
+                                    </button>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            container.innerHTML = `
+                <div class="player-box">
+                    <div class="episode-header">
+                        <div class="ep-title">${ep.title}</div>
+                        <div class="ep-summary">${ep.summary}</div>
+                    </div>
+                    <audio id="main-audio-player" controls preload="metadata">
+                        <source src="${ep.audio_url}" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    ${chaptersHtml}
+                </div>
+            `;
+        }
+
+        async function initApp() {
+            try {
+                const res = await fetch('data/episodes.json');
+                if (!res.ok) return;
+                allEpisodes = await res.json();
+                
+                if (allEpisodes && allEpisodes.length > 0) {
+                    loadEpisodeIntoPlayer(allEpisodes[0]);
+
+                    if (allEpisodes.length > 1) {
+                        const historyCard = document.getElementById('history-card');
+                        const historyContent = document.getElementById('history-content');
+                        historyCard.style.display = 'block';
+                        
+                        historyContent.innerHTML = allEpisodes.slice(1).map((ep, idx) => `
+                            <div class="history-item">
+                                <div class="history-info">
+                                    <h4>${ep.title}</h4>
+                                    <p>${ep.pubDate ? ep.pubDate.split(' ').slice(0, 4).join(' ') : ''} • ${ep.duration || ''}</p>
+                                </div>
+                                <button class="btn-play-mini" onclick="loadEpisodeIntoPlayer(allEpisodes[${idx + 1}])">
+                                    ▶ Ouçar
+                                </button>
+                            </div>
+                        `).join('');
+                    }
+                }
+            } catch (err) {
+                console.error("Erro ao carregar episódios:", err);
+            }
+        }
+
+        initApp();
+    </script>
 </body>
 </html>
