@@ -41,6 +41,10 @@ async def run_pipeline():
     filepath, file_size = await generate_audio_for_episode(new_ep)
     
     episodes = load_episodes()
+    if episodes and episodes[0]["id"] == new_ep["id"]:
+        episodes[0] = new_ep
+    from podcastti.rss_generator import save_episodes
+    save_episodes(episodes)
     generate_rss_xml(episodes)
     
     print("\n" + "=" * 60)
