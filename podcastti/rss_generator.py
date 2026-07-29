@@ -8,6 +8,7 @@ PODCAST_TITLE = "PodCastTI - Tecnologia e Dados para Iniciantes"
 PODCAST_LINK = "https://rapha-dias.github.io/PodCastTI"
 PODCAST_DESCRIPTION = "O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados para quem está começando na faculdade ou transição de carreira."
 PODCAST_AUTHOR = "Léo & Sara"
+PODCAST_EMAIL = os.environ.get("PODCAST_EMAIL", "contato@podcastti.local")
 PODCAST_IMAGE = "https://rapha-dias.github.io/PodCastTI/cover.jpg"
 PODCAST_CATEGORY = "Technology"
 PODCAST_LANGUAGE = "pt-br"
@@ -50,6 +51,12 @@ def generate_rss_xml(episodes):
     
     ET.SubElement(channel, "itunes:author").text = PODCAST_AUTHOR
     ET.SubElement(channel, "itunes:explicit").text = "no"
+
+    owner = ET.SubElement(channel, "itunes:owner")
+    ET.SubElement(owner, "itunes:name").text = PODCAST_AUTHOR
+    ET.SubElement(owner, "itunes:email").text = PODCAST_EMAIL
+
+    ET.SubElement(channel, "managingEditor").text = f"{PODCAST_EMAIL} ({PODCAST_AUTHOR})"
     
     image = ET.SubElement(channel, "itunes:image")
     image.set("href", PODCAST_IMAGE)

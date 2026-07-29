@@ -7,6 +7,11 @@
     <language>pt-br</language>
     <itunes:author>Léo &amp; Sara</itunes:author>
     <itunes:explicit>no</itunes:explicit>
+    <itunes:owner>
+      <itunes:name>Léo &amp; Sara</itunes:name>
+      <itunes:email>contato@podcastti.local</itunes:email>
+    </itunes:owner>
+    <managingEditor>contato@podcastti.local (Léo &amp; Sara)</managingEditor>
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
