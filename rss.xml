@@ -10,6 +10,27 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
+      <title>Ep 03: Destaques de TI: Ep. 53 Julia Labs - Hardware, leds e Projetos criativos</title>
+      <description>Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!
+
+📌 CAPÍTULOS DESTE EPISÓDIO:
+00:00 - Intro &amp; Destaques do Dia
+02:00 - Bloco 1: Ep. 53 Julia Labs - Hardware, leds 
+08:00 - Bloco 2: Ep. 52 Jessica Temporal - Como as a
+14:00 - Bloco 3: Ep. 51 Téo Calvo - O Mago das ciênc
+18:00 - Recapitulação &amp; Dicas Finais
+
+🔗 FONTES CITADAS:
+- freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep53/
+- freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep52/
+- freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep51/
+</description>
+      <guid>podcastti-ep003-20260728</guid>
+      <pubDate>Wed, 29 Jul 2026 01:01:40 +0000</pubDate>
+      <itunes:duration>00:20:00</itunes:duration>
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/temp.mp3" length="25000000" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Ep 02: Destaques de TI: Ep. 53 Julia Labs - Hardware, leds e Projetos criativos</title>
       <description>Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!
 

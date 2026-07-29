@@ -50,7 +50,7 @@ def generate_script_with_ai(news_items):
             print("[+] Gerando roteiro com a API do Gemini...")
             client = genai.Client(api_key=api_key)
             response = client.models.generate_content(
-                model="gemini-2.5-flash",
+                model="gemini-2.0-flash",
                 contents=f"{PROMPT_RULES}\n\nAqui estão as notícias reais do dia:\n{formatted_news}",
                 config={"response_mime_type": "application/json"}
             )
