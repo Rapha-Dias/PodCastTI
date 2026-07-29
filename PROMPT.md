@@ -46,7 +46,7 @@ Diálogo formatado com marcações de tempo:
 2. **Geração (`podcastti/script_generator.py`):** Cria o roteiro estruturado com Gemini AI / Fallback.
 3. **Áudio (`podcastti/audio_generator.py`):** Sintetiza o áudio MP3 com vozes neurais Microsoft Azure via `edge-tts`.
 4. **Distribução (`podcastti/rss_generator.py`):** Gera o feed `rss.xml` compatível com Spotify for Podcasters.
-5. **Nuvem (`.github/workflows/daily_podcast.yml`):** Execução diária automática às 07:00 UTC via GitHub Actions.
+5. **Nuvem (`.github/workflows/daily_podcast.yml`):** Execução diária automática às 10:00 UTC (07:00 AM no Horário de Brasília) via GitHub Actions.
 
 ---
 

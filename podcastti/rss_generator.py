@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 
 PODCAST_TITLE = "PodCastTI - Tecnologia e Dados para Iniciantes"
 PODCAST_LINK = "https://rapha-dias.github.io/PodCastTI"
-PODCAST_DESCRIPTION = "O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados para quem está começando na faculdade ou transição de carreira. ⏰ Novos episódios diariamente às 04:00 da manhã (horário de Brasília)."
+PODCAST_DESCRIPTION = "O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados para quem está começando na faculdade ou transição de carreira. ⏰ Novos episódios diariamente às 07:00 da manhã (horário de Brasília)."
 PODCAST_AUTHOR = "Léo & Sara"
 PODCAST_EMAIL = os.environ.get("PODCAST_EMAIL", "rdias@live.com")
 PODCAST_IMAGE = "https://rapha-dias.github.io/PodCastTI/cover.jpg"
