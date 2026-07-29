@@ -1,4 +1,13 @@
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+env/
+venv/
 voice_samples/
 .DS_Store
+*.log
