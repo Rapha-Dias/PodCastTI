@@ -1,5 +1,54 @@
 [
   {
+    "id": 2,
+    "guid": "podcastti-ep002-20260729",
+    "title": "Ep 02: Destaques de TI: Ep. 53 Julia Labs - Hardware, leds e Projetos criativos",
+    "summary": "Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!",
+    "description": "🎙️ SOBRE ESTE EPISÓDIO:\nNeste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!\n\n⏱️ CAPÍTULOS E MARCAS DE TEMPO:\n• 00:00 - Cap 01: INTRODUÇÃO\n• 00:05 - Cap 02: EP. 53 JULIA LABS - HARDWARE, LEDS E PROJETOS CRIATIVOS\n• 00:22 - Cap 03: EP. 52 JESSICA TEMPORAL - COMO AS APLICAÇÕES SABEM QUEM É VOCÊ?\n• 00:39 - Cap 04: EP. 51 TÉO CALVO - O MAGO DAS CIÊNCIAS DE DADOS\n• 00:55 - Cap 05: ENCERRAMENTO E DICAS\n\n🔗 FONTES CITADAS E LINKS RECOMENDADOS:\n• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep53/\n• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep52/\n• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep51/\n",
+    "audio_url": "https://rapha-dias.github.io/PodCastTI/episodes/ep02_podcastti.mp3",
+    "audio_bytes": 963504,
+    "pubDate": "Wed, 29 Jul 2026 03:48:57 +0000",
+    "duration": "00:01:00",
+    "script": "[00:00] INTRODUÇÃO\nLéo: Olá, pessoal! Bem-vindos ao PodCastTI! Eu sou o Léo e hoje trouxe notícias muito legais pra gente discutir.\nSara: Fala, gente! Eu sou a Sara. Vamos dar uma olhada no que rolou de mais importante no mundo dos estudos em TI hoje!\n\n[02:00] BLOCO 1: EP. 53 JULIA LABS - HARDWARE, LEDS E PROJETOS CRIATIVOS\nLéo: Sara, a primeira notícia de hoje veio do site freeCodeCamp PT: 'Ep. 53 Julia Labs - Hardware, leds e Projetos criativos'. O que isso significa pra quem tá começando?\nSara: Essa matéria é sensacional, Léo! Ela explica que Neste episódio, tive o prazer de conversar com Júlia Labs, engenheira de computação e criadora do projeto Julia Labs, sobre como ela transforma o mundo do hardware em algo criativo e acessível. Júlia compartilha sua jornada de empreendedora e produtora de conteúdo, destacando como a eletrônica pode  Isso é fundamental porque reduz a curva de aprendizado de quem tá dando os primeiros passos.\nLéo: Maravilha! Já faz total sentido pro meu dia a dia de estudos.\n\n[08:00] BLOCO 2: EP. 52 JESSICA TEMPORAL - COMO AS APLICAÇÕES SABEM QUEM É VOCÊ?\nLéo: Sara, a primeira notícia de hoje veio do site freeCodeCamp PT: 'Ep. 52 Jessica Temporal - Como as aplicações sabem quem é você?'. O que isso significa pra quem tá começando?\nSara: Essa matéria é sensacional, Léo! Ela explica que No episódio de hoje vamos mergulhar em uma conversa fascinante com Jéssica Temporal,  Developer Advocate na Auth0, especialista em segurança e identidade digital. Jéssica compartilha sua trajetória única, desde sua formação em informática biomédica até sua atuação no mundo da tecnologia, passando pe Isso é fundamental porque reduz a curva de aprendizado de quem tá dando os primeiros passos.\nLéo: Maravilha! Já faz total sentido pro meu dia a dia de estudos.\n\n[14:00] BLOCO 3: EP. 51 TÉO CALVO - O MAGO DAS CIÊNCIAS DE DADOS\nLéo: Sara, a primeira notícia de hoje veio do site freeCodeCamp PT: 'Ep. 51 Téo Calvo - O Mago das ciências de Dados'. O que isso significa pra quem tá começando?\nSara: Essa matéria é sensacional, Léo! Ela explica que No vídeo de hoje tive o prazer de conversar com o Téo Calvo, um estatístico e especialista na área de dados, com experiência em empresas como idwall e Grupo Boticário. É o criador da iniciativa Téo Me Why, onde ensina programação e ciência de dados gratuitamente na Twitch, acumulando Isso é fundamental porque reduz a curva de aprendizado de quem tá dando os primeiros passos.\nLéo: Maravilha! Já faz total sentido pro meu dia a dia de estudos.\n\n[18:00] ENCERRAMENTO E DICAS\nSara: E essas foram as dicas de hoje! Acessem os links nas Show Notes e continuem praticando todos os dias.\nLéo: Até o próximo episódio, pessoal! Bons estudos!",
+    "sources": [
+      [
+        "freeCodeCamp PT",
+        "https://www.freecodecamp.org/portuguese/news/podcast-ep53/"
+      ],
+      [
+        "freeCodeCamp PT",
+        "https://www.freecodecamp.org/portuguese/news/podcast-ep52/"
+      ],
+      [
+        "freeCodeCamp PT",
+        "https://www.freecodecamp.org/portuguese/news/podcast-ep51/"
+      ]
+    ],
+    "chapters": [
+      [
+        "00:00",
+        "Intro & Destaques do Dia"
+      ],
+      [
+        "02:00",
+        "Bloco 1: Ep. 53 Julia Labs - Hardware, leds "
+      ],
+      [
+        "08:00",
+        "Bloco 2: Ep. 52 Jessica Temporal - Como as a"
+      ],
+      [
+        "14:00",
+        "Bloco 3: Ep. 51 Téo Calvo - O Mago das ciênc"
+      ],
+      [
+        "18:00",
+        "Recapitulação & Dicas Finais"
+      ]
+    ],
+    "local_audio_path": "/home/runner/work/PodCastTI/PodCastTI/episodes/ep02_podcastti.mp3"
+  },
+  {
     "id": 1,
     "guid": "podcastti-ep001-20260729-full",
     "title": "Ep 01: Guia Definitivo de TI & Dados: Python vs SQL, Algoritmos e Carreira para Iniciantes",
