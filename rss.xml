@@ -14,6 +14,11 @@
       <description>No episódio de estreia do PodCastTI, Léo e Sara traduzem o 'tecniquês' para quem está começando em Análise de Dados e TI. Explicamos o que são variáveis em Python, como o SQL se comunica com bancos de dados e como praticar direto no navegador com o Kaggle Learn!
 
 📌 CAPÍTULOS DESTE EPISÓDIO:
+00:00 - Cap 01: Intro &amp; O Drama do Léo
+01:00 - Cap 02: Python e Variáveis na Prática (freeCodeCamp)
+02:30 - Cap 03: O que é SQL e Bancos de Dados (Alura)
+04:00 - Cap 04: Prática no Navegador com Kaggle Learn
+05:00 - Cap 05: Recapitulação e Dicas Finais
 
 🔗 FONTES CITADAS:
 - freeCodeCamp - Guia de Python para Iniciantes: https://www.freecodecamp.org/portuguese/news/o-guia-de-python-para-iniciantes/
@@ -21,9 +26,9 @@
 - Kaggle Learn - Python na Prática: https://www.kaggle.com/learn/python
 </description>
       <guid>podcastti-ep001-20260728</guid>
-      <pubDate>Wed, 29 Jul 2026 02:01:33 +0000</pubDate>
-      <itunes:duration>00:20:00</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3" length="25000000" type="audio/mpeg" />
+      <pubDate>Wed, 29 Jul 2026 02:03:34 +0000</pubDate>
+      <itunes:duration>00:05:36</itunes:duration>
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3" length="5376096" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
