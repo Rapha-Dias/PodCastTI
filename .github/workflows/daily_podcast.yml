@@ -44,5 +44,5 @@ jobs:
           git reset --soft origin/main
           git add data/episodes.json rss.xml episodes/
           git commit -m "auto: Publicado novo episódio do PodCastTI [skip ci]" || exit 0
-          git push origin HEAD:main
+          git push origin HEAD:main || (git fetch origin main && git rebase -Xours origin/main && git push origin HEAD:main)
 
