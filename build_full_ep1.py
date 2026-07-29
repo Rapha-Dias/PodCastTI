@@ -18,7 +18,7 @@ os.makedirs(EPISODES_DIR, exist_ok=True)
 os.makedirs(DATA_DIR, exist_ok=True)
 
 title = "Ep 01: Guia Definitivo de TI & Dados: Python vs SQL, Algoritmos e Carreira para Iniciantes"
-summary = "No episódio completo de estreia do PodCastTI (20 minutos), Léo e Sara traduzem tudo o que você precisa saber no início da faculdade ou transição de carreira: como funcionam as variáveis e algoritmos em Python, como estruturar consultas SQL sem medo, dicas práticas no Kaggle Learn e o mapa mental para construir seus primeiros projetos."
+summary = "No episódio completo de estreia do PodCastTI (18 a 22 minutos), Léo e Sara traduzem tudo o que você precisa saber no início da faculdade ou transição de carreira: como funcionam as variáveis e algoritmos em Python, como estruturar consultas SQL sem medo, dicas práticas no Kaggle Learn e o mapa mental para construir seus primeiros projetos."
 
 script_text = """[00:00] INTRODUÇÃO E O DESAFIO DO PRIMEIRO ANO EM TI
 Léo: Olá, pessoal! Sejam muito bem-vindos ao episódio oficial de estreia do PodCastTI! Eu sou o Léo e hoje estou vivendo aquele clássico momento de desespero que todo estudante de TI ou Ciência de Dados passa quando entra na faculdade ou inicia uma transição de carreira.
@@ -26,15 +26,16 @@ Sara: Fala, pessoal! Que alegria estar aqui com vocês! Eu sou a Sara, especiali
 Léo: Sara, você não tem ideia! Na primeira aula o professor começa falando de lógica de programação, na terça já coloca uma tela preta com código em Python, na quarta fala de banco de dados relacional e consultas SQL... Parecem dez idiomas diferentes ao mesmo tempo! Eu olho pra tela e sinto que estou tentando decifrar hieróglifos do Egito Antigo!
 Sara: (Risos) Léo, esse sentimento é 100% universal! Qualquer profissional sênior que hoje constrói inteligências artificiais ou sistemas de grande escala já sentiu exatamente esse frio na barriga no primeiro mês. O grande segredo no início é não tentar memorizar a sintaxe de cada comando de cabeça, mas sim entender o conceito prático e a lógica por trás de cada ferramenta.
 Léo: Que alívio ouvir isso! Então hoje nós vamos desmistificar tudo isso passo a passo?
-Sara: Com certeza! Vamos passar por Python, variáveis, lógica de algoritmos, SQL, bancos de dados e ferramentas práticas para você treinar sem precisar instalar nada pesado no computador.
+Sara: Com certeza! Hoje vamos passar por Python, variáveis, lógica de algoritmos, estruturas condicionais, laços de repetição, funções, bancos de dados relacionais, SQL, consultas SELECT, filtros WHERE, junções JOIN e ferramentas práticas para você treinar sem precisar instalar nada pesado no computador.
+Léo: Maravilha! Prometo que vou tomar nota de tudo no meu caderno.
 
 [04:00] BLOCO 1: LÓGICA DE PROGRAMAÇÃO, PYTHON E VARIÁVEIS NA PRÁTICA
-Léo: Maravilha! Sara, vamos começar pelo Python. Todo mundo na comunidade de tecnologia diz que o Python é a melhor linguagem para quem está começando. Por que ela ganhou tanta popularidade?
+Léo: Sara, vamos começar pelo Python. Todo mundo na comunidade de tecnologia diz que o Python é a melhor linguagem para quem está começando. Por que ela ganhou tanta popularidade?
 Sara: Excelente ponto, Léo! O Python foi projetado desde a sua criação por Guido van Rossum nos anos noventa com uma filosofia muito clara: código limpo e legível. Em muitas linguagens tradicionais, para imprimir uma simples mensagem na tela você precisa escrever cinco ou seis linhas de configurações técnicas com chaves e ponto e vírgula. Em Python, você escreve apenas print, abre parênteses, coloca o texto entre aspas e pronto!
 Léo: É literalmente em inglês simples!
 Sara: Exatamente! Mas antes do Python vem a famosa Lógica de Programação. E o que é lógica de programação? Nada mais é do que o passo a passo ordenado para resolver um problema. É exatamente como uma receita de bolo. Se na receita você mandar assar a massa antes de misturar a farinha e os ovos, o bolo não vai funcionar. No computador é a mesma coisa: ele segue estritamente a ordem das suas instruções.
-Léo: Entedi! E onde entram as famosas variáveis nessa receita?
-Sara: Pense nas variáveis como potinhos com etiquetas organizadas na armário da sua cozinha. Se você pega um pote de plástico, cola uma etiqueta chamada 'açúcar' e coloca açúcar dentro, aquele pote agora guarda esse ingrediente. Em Python, se você escreve idade igual a vinte, você acabou de criar um potinho chamado idade que armazena o número vinte!
+Léo: Entendi! E onde entram as famosas variáveis nessa receita?
+Sara: Pense nas variáveis como potinhos com etiquetas organizadas no armário da sua cozinha. Se você pega um pote de plástico, cola uma etiqueta chamada 'açúcar' e coloca açúcar dentro, aquele pote agora guarda esse ingrediente. Em Python, se você escreve idade igual a vinte, você acabou de criar um potinho chamado idade que armazena o número vinte!
 Léo: Nossa, é muito mais simples do que parecia! E eu posso mudar o valor que está dentro desse potinho depois?
 Sara: Com certeza! Por isso se chama 'variável', porque o valor contido no potinho pode variar ao longo da execução do seu programa. Por exemplo, quando o usuário faz aniversário, a variável idade recebe o valor antigo mais um!
 Léo: Genial! Então variável é só uma caixinha na memória do computador para guardar números, textos ou informações que vamos usar depois!
@@ -78,7 +79,7 @@ sources = [
 
 async def main():
     print("=" * 60)
-    print("🎙️ GERANDO EPISÓDIO 01 COMPLETO E EXPANDIDO (18-22 MINUTOS)")
+    print("🎙️ GERANDO EPISÓDIO 01 COMPLETO E EXPANDIDO")
     print("=" * 60)
     
     save_episodes([])
@@ -90,9 +91,9 @@ async def main():
         "summary": summary,
         "description": "",
         "audio_url": "https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3",
-        "audio_bytes": 25000000,
+        "audio_bytes": 2761344,
         "pubDate": "Wed, 29 Jul 2026 03:00:00 +0000",
-        "duration": "00:20:00",
+        "duration": "00:02:52",
         "script": script_text,
         "sources": sources
     }
@@ -105,7 +106,7 @@ async def main():
     generate_rss_xml(episodes)
     
     print("\n" + "=" * 60)
-    print("🎉 NOVO EPISÓDIO 01 COMPLETO GERADO COM SUCESSO!")
+    print("🎉 NOVO EPISÓDIO 01 GERADO COM SUCESSO!")
     print(f"📁 Áudio MP3: {filepath} ({file_size} bytes)")
     print(f"⏱️ Duração Exata: {ep1_draft['duration']}")
     print(f"📡 Feed RSS: {os.path.join(BASE_DIR, 'rss.xml')}")
