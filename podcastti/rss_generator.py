@@ -1,4 +1,5 @@
 import os
+import re
 import json
 from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
@@ -81,8 +82,10 @@ def add_new_episode(title, summary, script_text, audio_url, chapters, sources, a
     guid = f"podcastti-ep{ep_num:03d}-{datetime.now().strftime('%Y%m%d')}"
     
     show_notes = f"{summary}\n\n📌 CAPÍTULOS DESTE EPISÓDIO:\n"
-    for time_mark, ch_title in chapters:
-        show_notes += f"{time_mark} - {ch_title}\n"
+    for idx, (time_mark, ch_title) in enumerate(chapters, 1):
+        # Remove prefixos redundantes caso existam
+        clean_ch = re.sub(r'^(Bloco|Cap|Capítulo)\s*\d+:\s*', '', ch_title, flags=re.IGNORECASE)
+        show_notes += f"{time_mark} - Cap {idx:02d}: {clean_ch}\n"
         
     show_notes += "\n🔗 FONTES CITADAS:\n"
     for src_name, src_url in sources:
