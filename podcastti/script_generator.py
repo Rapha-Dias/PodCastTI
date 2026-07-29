@@ -31,8 +31,15 @@ Sua resposta DEVE ser um JSON válido no seguinte formato exato:
 }
 """
 
+def get_gemini_api_key():
+    for key, val in os.environ.items():
+        if "GEMINI" in key.upper() and ("KEY" in key.upper() or "TOKEN" in key.upper() or "API" in key.upper()):
+            if val and len(val) > 5:
+                return val
+    return os.environ.get("GEMINI_API_KEY")
+
 def generate_script_with_ai(news_items):
-    api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = get_gemini_api_key()
     
     formatted_news = ""
     for i, item in enumerate(news_items, 1):

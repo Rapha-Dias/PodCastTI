@@ -26,6 +26,7 @@ jobs:
       - name: Executar Pipeline Automático
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_PODCASTTI: ${{ secrets['Gemini API Key -PodCastTI'] || secrets.GEMINI_API_KEY }}
         run: |
           python main.py
 
