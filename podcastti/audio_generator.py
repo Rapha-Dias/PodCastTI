@@ -10,40 +10,28 @@ OUTPUT_DIR = os.path.join(BASE_DIR, "episodes")
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-def preprocess_text_to_ssml(text: str, voice: str) -> str:
-    clean_text = re.sub(r'\(Risos\)', '<break time="300ms"/>', text, flags=re.IGNORECASE)
-    clean_text = re.sub(r'\(Pensativo\)', '<break time="400ms"/>', clean_text, flags=re.IGNORECASE)
-    clean_text = re.sub(r'\(Pausa\)', '<break time="500ms"/>', clean_text, flags=re.IGNORECASE)
-    clean_text = re.sub(r'\([^\)]+\)', '', clean_text)
-    
+def clean_text_for_speech(text: str) -> str:
+    # Substitui marcações de expressão por pausas naturais
+    clean = re.sub(r'\((Risos|Pensativo|Pausa)\)', '...', text, flags=re.IGNORECASE)
+    # Remove quaisquer outras instruções ou marcações entre parênteses
+    clean = re.sub(r'\([^\)]+\)', '', clean)
+    # Remove quaisquer tags HTML/XML
+    clean = re.sub(r'<[^>]+>', '', clean)
+    # Normaliza espaços
+    clean = re.sub(r'\s+', ' ', clean).strip()
+    return clean
+
+async def synthesize_speech(text: str, voice: str) -> bytes:
+    clean_text = clean_text_for_speech(text)
     rate = "+3%" if voice == VOICE_LEO else "+0%"
     pitch = "+1Hz" if voice == VOICE_LEO else "+0Hz"
     
-    ssml = f"""<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="pt-BR">
-    <voice name="{voice}">
-        <prosody rate="{rate}" pitch="{pitch}">
-            {clean_text}
-        </prosody>
-    </voice>
-</speak>"""
-    return ssml
-
-async def synthesize_speech(text: str, voice: str) -> bytes:
-    ssml = preprocess_text_to_ssml(text, voice)
-    communicate = edge_tts.Communicate(ssml, voice)
+    communicate = edge_tts.Communicate(clean_text, voice, rate=rate, pitch=pitch)
     audio_bytes = bytearray()
     
-    try:
-        async for chunk in communicate.stream():
-            if chunk["type"] == "audio":
-                audio_bytes.extend(chunk["data"])
-    except Exception as e:
-        print(f"  [!] Fallback SSML para texto simples: {e}")
-        plain_text = re.sub(r'\([^\)]+\)', '', text)
-        communicate = edge_tts.Communicate(plain_text, voice)
-        async for chunk in communicate.stream():
-            if chunk["type"] == "audio":
-                audio_bytes.extend(chunk["data"])
+    async for chunk in communicate.stream():
+        if chunk["type"] == "audio":
+            audio_bytes.extend(chunk["data"])
                 
     return bytes(audio_bytes)
 
