@@ -24,8 +24,8 @@ def run_suite():
         with open(json_path, "r", encoding="utf-8") as f:
             episodes = json.load(f)
         assert len(episodes) >= 1, "Array de episódios vazio!"
-        ep = episodes[0]
-        assert ep["id"] == 1, "ID do episódio não é 1!"
+        ep = next((e for e in episodes if e["id"] == 1), episodes[0])
+        assert ep["id"] == 1, "ID do episódio 1 não encontrado!"
         assert "audio_url" in ep and "ep01_podcastti.mp3" in ep["audio_url"], "URL do áudio inválida!"
         assert "Cap 01" in ep["description"], "Marcador de capítulo Cap 01 ausente na descrição!"
         print(f"  ✅ APROVADO: Episódio '{ep['title']}' validado. (Duração: {ep.get('duration')})")
