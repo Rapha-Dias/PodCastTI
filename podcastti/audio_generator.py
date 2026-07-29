@@ -11,18 +11,21 @@ OUTPUT_DIR = os.path.join(BASE_DIR, "episodes")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def clean_text_for_speech(text: str) -> str:
-    # 1. Remove URLs inteiras (ex: https://...) para que o TTS não leia o link caractere por caractere
-    clean = re.sub(r'https?://\S+', '', text)
-    # 2. Substitui marcações de expressão por pausas naturais
+    # 1. Remove blocos de código Markdown inteiros (```...```) e seus conteúdos
+    clean = re.sub(r'```[\s\S]*?```', '', text)
+    # 2. Remove URLs inteiras (ex: https://...) para que o TTS não leia o link caractere por caractere
+    clean = re.sub(r'https?://\S+', '', clean)
+    # 3. Substitui marcações de expressão por pausas naturais
     clean = re.sub(r'\((Risos|Pensativo|Pausa)\)', '...', clean, flags=re.IGNORECASE)
-    # 3. Remove quaisquer outras instruções entre parênteses
+    # 4. Remove quaisquer outras instruções entre parênteses
     clean = re.sub(r'\([^\)]+\)', '', clean)
-    # 4. Remove tags HTML/XML
+    # 5. Remove marcas de tempo tipo [00:00] ou [04:30]
+    clean = re.sub(r'\[\d{1,2}:\d{2}\]', '', clean)
+    # 6. Remove tags HTML/XML
     clean = re.sub(r'<[^>]+>', '', clean)
-    # 5. Remove formatações Markdown (**, *, __, `, ```)
-    clean = re.sub(r'```[a-zA-Z]*', '', clean)
+    # 7. Remove formatações Markdown restantes (**, *, __, `, ```)
     clean = re.sub(r'[\*\`\_]', '', clean)
-    # 6. Normaliza espaços
+    # 8. Normaliza espaços
     clean = re.sub(r'\s+', ' ', clean).strip()
     return clean
 
@@ -41,6 +44,12 @@ def strip_id3(data: bytes) -> bytes:
         )
         total_id3_len = 10 + tag_size
         data = data[total_id3_len:]
+        
+    # Garante alinhamento no primeiro frame sync MP3 (0xFF 0xE0+)
+    for i in range(min(len(data) - 1, 512)):
+        if data[i] == 0xFF and (data[i+1] & 0xE0) == 0xE0:
+            return data[i:]
+            
     return data
 
 async def synthesize_speech(text: str, voice: str) -> bytes:
