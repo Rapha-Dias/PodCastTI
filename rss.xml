@@ -21,10 +21,10 @@ No episódio completo de estreia do PodCastTI (18 a 22 minutos), Léo e Sara tra
 
 ⏱️ CAPÍTULOS E MARCAS DE TEMPO:
 • 00:00 - Cap 01: E O DESAFIO DO PRIMEIRO ANO EM TI
-• 00:39 - Cap 02: LÓGICA DE PROGRAMAÇÃO, PYTHON E VARIÁVEIS NA PRÁTICA
-• 01:25 - Cap 03: BANCOS DE DADOS E A LINGUAGEM SQL
-• 02:13 - Cap 04: FERRAMENTAS PRÁTICAS, KAGGLE LEARN E METODOLOGIA DE ESTUDOS
-• 02:43 - Cap 05: RECAPITULAÇÃO, PROJETOS PRÁTICOS E ENCERRAMENTO
+• 00:40 - Cap 02: LÓGICA DE PROGRAMAÇÃO, PYTHON E VARIÁVEIS NA PRÁTICA
+• 01:27 - Cap 03: BANCOS DE DADOS E A LINGUAGEM SQL
+• 02:16 - Cap 04: FERRAMENTAS PRÁTICAS, KAGGLE LEARN E METODOLOGIA DE ESTUDOS
+• 02:47 - Cap 05: RECAPITULAÇÃO, PROJETOS PRÁTICOS E ENCERRAMENTO
 
 🔗 FONTES CITADAS E LINKS RECOMENDADOS:
 • freeCodeCamp - Guia de Python para Iniciantes: https://www.freecodecamp.org/portuguese/news/o-guia-de-python-para-iniciantes/
@@ -35,8 +35,8 @@ No episódio completo de estreia do PodCastTI (18 a 22 minutos), Léo e Sara tra
       <itunes:explicit>no</itunes:explicit>
       <guid>podcastti-ep001-20260729-full</guid>
       <pubDate>Wed, 29 Jul 2026 03:00:00 +0000</pubDate>
-      <itunes:duration>00:02:56</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3" length="2825280" type="audio/mpeg" />
+      <itunes:duration>00:03:00</itunes:duration>
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3" length="2884752" type="audio/mpeg" />
     </item>
   </channel>
 </rss>

@@ -78,7 +78,7 @@ def parse_sections(script_text: str):
         speaker_match = re.match(r'^(?:\*\*|\*)?\s*(Léo|Leo|Sara)\s*(?:\*\*|\*)?\s*:\s*(.*)', line, re.IGNORECASE)
         if speaker_match:
             raw_speaker = speaker_match.group(1).lower()
-            speaker = "Léo" if "leo" in raw_speaker else "Sara"
+            speaker = "Léo" if ("léo" in raw_speaker or "leo" in raw_speaker) else "Sara"
             text = speaker_match.group(2).strip()
             if text:
                 current_lines.append((speaker, text))
