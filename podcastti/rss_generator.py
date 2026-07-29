@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 
 PODCAST_TITLE = "PodCastTI - Tecnologia e Dados para Iniciantes"
 PODCAST_LINK = "https://rapha-dias.github.io/PodCastTI"
-PODCAST_DESCRIPTION = "O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados para quem está começando na faculdade ou transição de carreira."
+PODCAST_DESCRIPTION = "O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados para quem está começando na faculdade ou transição de carreira. ⏰ Novos episódios diariamente às 04:00 da manhã (horário de Brasília)."
 PODCAST_AUTHOR = "Léo & Sara"
 PODCAST_EMAIL = os.environ.get("PODCAST_EMAIL", "rdias@live.com")
 PODCAST_IMAGE = "https://rapha-dias.github.io/PodCastTI/cover.jpg"
@@ -88,15 +88,14 @@ def add_new_episode(title, summary, script_text, audio_url, chapters, sources, a
     today_str = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
     guid = f"podcastti-ep{ep_num:03d}-{datetime.now().strftime('%Y%m%d')}"
     
-    show_notes = f"{summary}\n\n📌 CAPÍTULOS DESTE EPISÓDIO:\n"
+    show_notes = f"🎙️ SOBRE ESTE EPISÓDIO:\n{summary}\n\n⏱️ CAPÍTULOS E MARCAS DE TEMPO:\n"
     for idx, (time_mark, ch_title) in enumerate(chapters, 1):
-        # Remove prefixos redundantes caso existam
         clean_ch = re.sub(r'^(Bloco|Cap|Capítulo)\s*\d+:\s*', '', ch_title, flags=re.IGNORECASE)
-        show_notes += f"{time_mark} - Cap {idx:02d}: {clean_ch}\n"
+        show_notes += f"• {time_mark} - Cap {idx:02d}: {clean_ch}\n"
         
-    show_notes += "\n🔗 FONTES CITADAS:\n"
+    show_notes += "\n🔗 FONTES CITADAS E LINKS RECOMENDADOS:\n"
     for src_name, src_url in sources:
-        show_notes += f"- {src_name}: {src_url}\n"
+        show_notes += f"• {src_name}: {src_url}\n"
         
     new_ep = {
         "id": ep_num,

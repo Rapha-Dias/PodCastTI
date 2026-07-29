@@ -3,7 +3,7 @@
   <channel>
     <title>PodCastTI - Tecnologia e Dados para Iniciantes</title>
     <link>https://rapha-dias.github.io/PodCastTI</link>
-    <description>O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados para quem está começando na faculdade ou transição de carreira.</description>
+    <description>O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados para quem está começando na faculdade ou transição de carreira. ⏰ Novos episódios diariamente às 04:00 da manhã (horário de Brasília).</description>
     <language>pt-br</language>
     <itunes:author>Léo &amp; Sara</itunes:author>
     <itunes:explicit>no</itunes:explicit>
@@ -15,16 +15,21 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
-      <title>Ep 01: Destaques de TI: Ep. 53 Julia Labs - Hardware, leds e Projetos criativos</title>
-      <description>Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!
+      <title>Ep 01: Guia Definitivo de TI &amp; Dados: Python vs SQL, Algoritmos e Carreira para Iniciantes</title>
+      <description>No episódio completo de estreia do PodCastTI (20 minutos), Léo e Sara traduzem tudo o que você precisa saber no início da faculdade ou transição de carreira: como funcionam as variáveis e algoritmos em Python, como estruturar consultas SQL sem medo, dicas práticas no Kaggle Learn e o mapa mental para construir seus primeiros projetos.
 
 📌 CAPÍTULOS DESTE EPISÓDIO:
 00:00 - Cap 01: Intro
+
+🔗 FONTES CITADAS:
+- freeCodeCamp - Guia de Python para Iniciantes: https://www.freecodecamp.org/portuguese/news/o-guia-de-python-para-iniciantes/
+- Alura - O que é SQL?: https://www.alura.com.br/artigos/o-que-e-sql
+- Kaggle Learn - Cursos Gratuitos de Python e SQL: https://www.kaggle.com/learn
 </description>
-      <guid>podcastti-ep001-20260729</guid>
-      <pubDate>Wed, 29 Jul 2026 03:03:34 +0000</pubDate>
-      <itunes:duration>00:01:02</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3" length="1003104" type="audio/mpeg" />
+      <guid>podcastti-ep001-20260729-full</guid>
+      <pubDate>Wed, 29 Jul 2026 03:00:00 +0000</pubDate>
+      <itunes:duration>00:02:56</itunes:duration>
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3" length="2820960" type="audio/mpeg" />
     </item>
   </channel>
 </rss>

@@ -127,16 +127,16 @@ async def generate_audio_for_episode(ep):
     ep["duration"] = duration_str
     ep["local_audio_path"] = filepath
     
-    # Reconstrói a descrição com as marcas de tempo dinâmicas e reais
-    show_notes = f"{ep['summary']}\n\n📌 CAPÍTULOS DESTE EPISÓDIO:\n"
+    # Reconstrói a descrição com a formatação limpa e profissional
+    show_notes = f"🎙️ SOBRE ESTE EPISÓDIO:\n{ep['summary']}\n\n⏱️ CAPÍTULOS E MARCAS DE TEMPO:\n"
     for idx, (time_mark, ch_title) in enumerate(dynamic_chapters, 1):
-        show_notes += f"{time_mark} - Cap {idx:02d}: {ch_title}\n"
+        show_notes += f"• {time_mark} - Cap {idx:02d}: {ch_title}\n"
         
     if "sources" in ep and ep["sources"]:
-        show_notes += "\n🔗 FONTES CITADAS:\n"
+        show_notes += "\n🔗 FONTES CITADAS E LINKS RECOMENDADOS:\n"
         for src in ep["sources"]:
             if isinstance(src, (list, tuple)) and len(src) >= 2:
-                show_notes += f"- {src[0]}: {src[1]}\n"
+                show_notes += f"• {src[0]}: {src[1]}\n"
                 
     ep["description"] = show_notes
     return filepath, file_size
