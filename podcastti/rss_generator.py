@@ -68,6 +68,8 @@ def generate_rss_xml(episodes):
         item = ET.SubElement(channel, "item")
         ET.SubElement(item, "title").text = ep.get("title")
         ET.SubElement(item, "description").text = ep.get("description", "")
+        ET.SubElement(item, "itunes:summary").text = ep.get("summary", ep.get("title"))
+        ET.SubElement(item, "itunes:explicit").text = "no"
         ET.SubElement(item, "guid").text = ep.get("guid")
         ET.SubElement(item, "pubDate").text = ep.get("pubDate")
         ET.SubElement(item, "itunes:duration").text = ep.get("duration", "00:20:00")

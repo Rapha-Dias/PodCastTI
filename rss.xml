@@ -15,28 +15,6 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
-      <title>Ep 02: Destaques de TI: Ep. 53 Julia Labs - Hardware, leds e Projetos criativos</title>
-      <description>🎙️ SOBRE ESTE EPISÓDIO:
-Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!
-
-⏱️ CAPÍTULOS E MARCAS DE TEMPO:
-• 00:00 - Cap 01: INTRODUÇÃO
-• 00:05 - Cap 02: EP. 53 JULIA LABS - HARDWARE, LEDS E PROJETOS CRIATIVOS
-• 00:22 - Cap 03: EP. 52 JESSICA TEMPORAL - COMO AS APLICAÇÕES SABEM QUEM É VOCÊ?
-• 00:39 - Cap 04: EP. 51 TÉO CALVO - O MAGO DAS CIÊNCIAS DE DADOS
-• 00:55 - Cap 05: ENCERRAMENTO E DICAS
-
-🔗 FONTES CITADAS E LINKS RECOMENDADOS:
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep53/
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep52/
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep51/
-</description>
-      <guid>podcastti-ep002-20260729</guid>
-      <pubDate>Wed, 29 Jul 2026 03:48:57 +0000</pubDate>
-      <itunes:duration>00:01:00</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep02_podcastti.mp3" length="963504" type="audio/mpeg" />
-    </item>
-    <item>
       <title>Ep 01: Guia Definitivo de TI &amp; Dados: Python vs SQL, Algoritmos e Carreira para Iniciantes</title>
       <description>🎙️ SOBRE ESTE EPISÓDIO:
 No episódio completo de estreia do PodCastTI (18 a 22 minutos), Léo e Sara traduzem tudo o que você precisa saber no início da faculdade ou transição de carreira: como funcionam as variáveis e algoritmos em Python, como estruturar consultas SQL sem medo, dicas práticas no Kaggle Learn e o mapa mental para construir seus primeiros projetos.
@@ -53,6 +31,8 @@ No episódio completo de estreia do PodCastTI (18 a 22 minutos), Léo e Sara tra
 • Alura - O que é SQL?: https://www.alura.com.br/artigos/o-que-e-sql
 • Kaggle Learn - Cursos Gratuitos de Python e SQL: https://www.kaggle.com/learn
 </description>
+      <itunes:summary>No episódio completo de estreia do PodCastTI (18 a 22 minutos), Léo e Sara traduzem tudo o que você precisa saber no início da faculdade ou transição de carreira: como funcionam as variáveis e algoritmos em Python, como estruturar consultas SQL sem medo, dicas práticas no Kaggle Learn e o mapa mental para construir seus primeiros projetos.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
       <guid>podcastti-ep001-20260729-full</guid>
       <pubDate>Wed, 29 Jul 2026 03:00:00 +0000</pubDate>
       <itunes:duration>00:02:56</itunes:duration>

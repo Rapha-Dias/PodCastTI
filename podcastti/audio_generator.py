@@ -11,18 +11,42 @@ OUTPUT_DIR = os.path.join(BASE_DIR, "episodes")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def clean_text_for_speech(text: str) -> str:
-    # Substitui marcações de expressão por pausas naturais
-    clean = re.sub(r'\((Risos|Pensativo|Pausa)\)', '...', text, flags=re.IGNORECASE)
-    # Remove quaisquer outras instruções ou marcações entre parênteses
+    # 1. Remove URLs inteiras (ex: https://...) para que o TTS não leia o link caractere por caractere
+    clean = re.sub(r'https?://\S+', '', text)
+    # 2. Substitui marcações de expressão por pausas naturais
+    clean = re.sub(r'\((Risos|Pensativo|Pausa)\)', '...', clean, flags=re.IGNORECASE)
+    # 3. Remove quaisquer outras instruções entre parênteses
     clean = re.sub(r'\([^\)]+\)', '', clean)
-    # Remove quaisquer tags HTML/XML
+    # 4. Remove tags HTML/XML
     clean = re.sub(r'<[^>]+>', '', clean)
-    # Normaliza espaços
+    # 5. Remove formatações Markdown (**, *, __, `, ```)
+    clean = re.sub(r'```[a-zA-Z]*', '', clean)
+    clean = re.sub(r'[\*\`\_]', '', clean)
+    # 6. Normaliza espaços
     clean = re.sub(r'\s+', ' ', clean).strip()
     return clean
 
+def strip_id3(data: bytes) -> bytes:
+    """
+    Remove todos os cabeçalhos ID3v2 de dados de áudio para evitar que
+    metadados em código binário fiquem embutidos no meio do arquivo MP3.
+    """
+    while data.startswith(b'ID3') and len(data) >= 10:
+        size_bytes = data[6:10]
+        tag_size = (
+            (size_bytes[0] & 0x7F) << 21 |
+            (size_bytes[1] & 0x7F) << 14 |
+            (size_bytes[2] & 0x7F) << 7 |
+            (size_bytes[3] & 0x7F)
+        )
+        total_id3_len = 10 + tag_size
+        data = data[total_id3_len:]
+    return data
+
 async def synthesize_speech(text: str, voice: str) -> bytes:
     clean_text = clean_text_for_speech(text)
+    if not clean_text:
+        return b""
     rate = "+3%" if voice == VOICE_LEO else "+0%"
     pitch = "+1Hz" if voice == VOICE_LEO else "+0Hz"
     
@@ -31,9 +55,10 @@ async def synthesize_speech(text: str, voice: str) -> bytes:
     
     async for chunk in communicate.stream():
         if chunk["type"] == "audio":
-            audio_bytes.extend(chunk["data"])
+            raw_chunk = strip_id3(chunk["data"])
+            audio_bytes.extend(raw_chunk)
                 
-    return bytes(audio_bytes)
+    return strip_id3(bytes(audio_bytes))
 
 def parse_sections(script_text: str):
     """
