@@ -122,7 +122,7 @@ def format_duration_hhmmss(seconds: float) -> str:
 
 async def generate_audio_for_episode(ep):
     ep_id = ep["id"]
-    filename = f"ep{ep_id:02d}_podcastti.mp3"
+    filename = f"ep{ep_id:02d}_podcastti_v2.mp3"
     filepath = os.path.join(OUTPUT_DIR, filename)
     
     print(f"\n[+] Sintetizando áudio limpo de alta fidelidade para o Episódio {ep_id}: {ep['title']}...")
