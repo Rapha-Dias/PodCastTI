@@ -132,7 +132,7 @@ async def generate_audio_for_episode(ep):
     
     current_time_seconds = 0.0
     dynamic_chapters = []
-    BYTES_PER_SECOND = 16000.0
+    BYTES_PER_SECOND = 6000.0  # 48 kbps mono MP3 do edge-tts = 6000 bytes/segundo
     
     for idx, (section_title, dialogues) in enumerate(sections, 1):
         timestamp_str = format_time(current_time_seconds)
