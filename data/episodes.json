@@ -1,5 +1,54 @@
 [
   {
+    "id": 2,
+    "guid": "podcastti-ep002-20260730",
+    "title": "Ep 02: Destaques de TI: Ep. 50 Guilherme Rodrigues - Apps Inteligentes No-Code e IA",
+    "summary": "Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!",
+    "description": "🎙️ SOBRE ESTE EPISÓDIO:\nNeste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!\n\n⏱️ CAPÍTULOS E MARCAS DE TEMPO:\n• 00:00 - Cap 01: INTRODUÇÃO\n• 00:09 - Cap 02: EP. 50 GUILHERME RODRIGUES - APPS INTELIGENTES NO-CODE E IA\n• 00:31 - Cap 03: EP. 49 SIBELIUS SERAPHINI - CONSTRUÇÃO DE UMA FINTECH\n• 00:52 - Cap 04: ALGUÉM COMENTOU SOBRE A POSSIBILIDADE DE FAVORITAR POSTS DO TABNEWS PARA LER DEPOIS E EU PERDI O POST (+ VERSÃO NOVA DO TABS)\n• 01:10 - Cap 05: ENCERRAMENTO E DICAS\n\n🔗 FONTES CITADAS E LINKS RECOMENDADOS:\n• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep50/\n• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep49/\n• TabNews: https://www.tabnews.com.br/rphlfc/alguem-comentou-sobre-a-possibilidade-de-favoritar-posts-do-tabnews-para-ler-depois-e-eu-perdi-o-post-versao-nova-do-tabs\n",
+    "audio_url": "https://rapha-dias.github.io/PodCastTI/episodes/ep02_podcastti.mp3",
+    "audio_bytes": 1225584,
+    "pubDate": "Thu, 30 Jul 2026 11:54:37 +0000",
+    "duration": "00:01:16",
+    "script": "[00:00] INTRODUÇÃO\nLéo: Olá, pessoal! Sejam muito bem-vindos ao PodCastTI, o seu podcast diário de tecnologia e dados!\nSara: Fala, gente! Eu sou a Sara e hoje trazemos tópicos incríveis sobre lógica de programação, Python e desenvolvimento para ajudar nos seus estudos.\nLéo: Isso mesmo! Vamos descomplicar o tecniquês e ver como aplicar tudo isso na prática.\n\n[02:30] BLOCO 1: EP. 50 GUILHERME RODRIGUES - APPS INTELIGENTES NO-CODE E IA\nLéo: Sara, a matéria principal desse bloco veio de freeCodeCamp PT: 'Ep. 50 Guilherme Rodrigues - Apps Inteligentes No-Code e IA'. O que o estudante iniciante precisa saber sobre isso?\nSara: Essa matéria é fundamental, Léo! Ela nos mostra que No episódio de hoje falei com Guilherme Rodrigues, cofundador da WebDraw, uma plataforma que permite criar aplicativos usando inteligência artificial em questão de segundos. Conta sobre sua jornada empreendedora e como chegou no mundo da tecnologia até a criação de soluções inovadoras com inteligência artificial. Ele discute o impacto Pense nisso como uma receita de bolo: você define os passos claros e o computador executa sem erros.\nLéo: Sensacional! Isso tira aquele medo inicial de encarar uma tela preta cheia de códigos.\nSara: Exatamente! E a dica de ouro é praticar pequenas partes todos os dias em vez de tentar aprender tudo de uma vez.\n\n[08:00] BLOCO 2: EP. 49 SIBELIUS SERAPHINI - CONSTRUÇÃO DE UMA FINTECH\nLéo: Sara, a matéria principal desse bloco veio de freeCodeCamp PT: 'Ep. 49 Sibelius Seraphini - Construção de uma fintech'. O que o estudante iniciante precisa saber sobre isso?\nSara: Essa matéria é fundamental, Léo! Ela nos mostra que Nesse episódio tive o prazer de conversar com Sibelius Seraphini, cofundador da Wolvi, uma fintech focada em soluções de pagamentos via PIX. Sibelio fala sobre sua trajetória no mundo das startups, desde a criação de sua primeira empresa até a construção da Wolvi, discutindo como a evolução do produto, Pense nisso como uma receita de bolo: você define os passos claros e o computador executa sem erros.\nLéo: Sensacional! Isso tira aquele medo inicial de encarar uma tela preta cheia de códigos.\nSara: Exatamente! E a dica de ouro é praticar pequenas partes todos os dias em vez de tentar aprender tudo de uma vez.\n\n[14:00] BLOCO 3: ALGUÉM COMENTOU SOBRE A POSSIBILIDADE DE FAVORITAR POSTS DO TABNEWS PARA LER DEPOIS E EU PERDI O POST (+ VERSÃO NOVA DO TABS)\nLéo: Sara, a matéria principal desse bloco veio de TabNews: 'Alguém comentou sobre a possibilidade de favoritar posts do TabNews para ler depois e eu perdi o post (+ versão nova do Tabs)'. O que o estudante iniciante precisa saber sobre isso?\nSara: Essa matéria é fundamental, Léo! Ela nos mostra que Tentei procurar o post pra poder adicionar aqui mas não encontrei mais. Aí que eu acredito que a ideia de favoritar um post pode ser interessante. Não sei se já aconteceu com vocês nas re... Pense nisso como uma receita de bolo: você define os passos claros e o computador executa sem erros.\nLéo: Sensacional! Isso tira aquele medo inicial de encarar uma tela preta cheia de códigos.\nSara: Exatamente! E a dica de ouro é praticar pequenas partes todos os dias em vez de tentar aprender tudo de uma vez.\n\n[18:00] ENCERRAMENTO E DICAS\nSara: E com isso encerramos o episódio de hoje! Não se esqueçam de conferir os links recomendados no feed ou na nossa página web.\nLéo: Até o próximo episódio, pessoal! Mantenham a curiosidade acesa e bons estudos!",
+    "sources": [
+      [
+        "freeCodeCamp PT",
+        "https://www.freecodecamp.org/portuguese/news/podcast-ep50/"
+      ],
+      [
+        "freeCodeCamp PT",
+        "https://www.freecodecamp.org/portuguese/news/podcast-ep49/"
+      ],
+      [
+        "TabNews",
+        "https://www.tabnews.com.br/rphlfc/alguem-comentou-sobre-a-possibilidade-de-favoritar-posts-do-tabnews-para-ler-depois-e-eu-perdi-o-post-versao-nova-do-tabs"
+      ]
+    ],
+    "chapters": [
+      [
+        "00:00",
+        "INTRODUÇÃO"
+      ],
+      [
+        "00:09",
+        "EP. 50 GUILHERME RODRIGUES - APPS INTELIGENTES NO-CODE E IA"
+      ],
+      [
+        "00:31",
+        "EP. 49 SIBELIUS SERAPHINI - CONSTRUÇÃO DE UMA FINTECH"
+      ],
+      [
+        "00:52",
+        "ALGUÉM COMENTOU SOBRE A POSSIBILIDADE DE FAVORITAR POSTS DO TABNEWS PARA LER DEPOIS E EU PERDI O POST (+ VERSÃO NOVA DO TABS)"
+      ],
+      [
+        "01:10",
+        "ENCERRAMENTO E DICAS"
+      ]
+    ],
+    "local_audio_path": "/home/runner/work/PodCastTI/PodCastTI/episodes/ep02_podcastti.mp3"
+  },
+  {
     "id": 1,
     "guid": "podcastti-ep001-20260729",
     "title": "Ep 01: Destaques de TI: Ep. 53 Julia Labs - Hardware, leds e Projetos criativos",
