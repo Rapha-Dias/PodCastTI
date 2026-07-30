@@ -15,30 +15,6 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
-      <title>Ep 02: Destaques de TI: Ep. 50 Guilherme Rodrigues - Apps Inteligentes No-Code e IA</title>
-      <description>🎙️ SOBRE ESTE EPISÓDIO:
-Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!
-
-⏱️ CAPÍTULOS E MARCAS DE TEMPO:
-• 00:00 - Cap 01: INTRODUÇÃO
-• 00:09 - Cap 02: EP. 50 GUILHERME RODRIGUES - APPS INTELIGENTES NO-CODE E IA
-• 00:31 - Cap 03: EP. 49 SIBELIUS SERAPHINI - CONSTRUÇÃO DE UMA FINTECH
-• 00:52 - Cap 04: ALGUÉM COMENTOU SOBRE A POSSIBILIDADE DE FAVORITAR POSTS DO TABNEWS PARA LER DEPOIS E EU PERDI O POST (+ VERSÃO NOVA DO TABS)
-• 01:10 - Cap 05: ENCERRAMENTO E DICAS
-
-🔗 FONTES CITADAS E LINKS RECOMENDADOS:
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep50/
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep49/
-• TabNews: https://www.tabnews.com.br/rphlfc/alguem-comentou-sobre-a-possibilidade-de-favoritar-posts-do-tabnews-para-ler-depois-e-eu-perdi-o-post-versao-nova-do-tabs
-</description>
-      <itunes:summary>Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!</itunes:summary>
-      <itunes:explicit>no</itunes:explicit>
-      <guid>podcastti-ep002-20260730</guid>
-      <pubDate>Thu, 30 Jul 2026 11:54:37 +0000</pubDate>
-      <itunes:duration>00:01:16</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep02_podcastti.mp3" length="1225584" type="audio/mpeg" />
-    </item>
-    <item>
       <title>Ep 01: Destaques de TI: Ep. 53 Julia Labs - Hardware, leds e Projetos criativos</title>
       <description>🎙️ SOBRE ESTE EPISÓDIO:
 Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!
@@ -57,8 +33,8 @@ Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutor
 </description>
       <itunes:summary>Neste episódio do PodCastTI, Léo e Sara analisam as últimas novidades e tutoriais práticos de TI para ajudar estudantes e iniciantes!</itunes:summary>
       <itunes:explicit>no</itunes:explicit>
-      <guid>podcastti-ep001-20260729</guid>
-      <pubDate>Wed, 29 Jul 2026 19:23:25 +0000</pubDate>
+      <guid>podcastti-ep001-20260730</guid>
+      <pubDate>Thu, 30 Jul 2026 18:05:46 +0000</pubDate>
       <itunes:duration>00:01:19</itunes:duration>
       <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti.mp3" length="1264032" type="audio/mpeg" />
     </item>

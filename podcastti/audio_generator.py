@@ -33,8 +33,9 @@ def clean_text_for_speech(text: str) -> str:
     clean = re.sub(r'\([^\)]+\)', '', clean)
     # 7. Remove caracteres de formatação Markdown (*, _, `, #, ~, >)
     clean = re.sub(r'[\*\`\_\#\~\>]', '', clean)
-    # 8. Limpa entidades HTML
+    # 8. Limpa entidades HTML e substitui & por 'e' para prevenir falhas de SSML/XML no TTS
     clean = clean.replace("&quot;", '"').replace("&amp;", 'e').replace("&lt;", '').replace("&gt;", '')
+    clean = clean.replace("&", "e")
     # 9. Normaliza múltiplos espaços e quebras de linha
     clean = re.sub(r'\s+', ' ', clean).strip()
     return clean
@@ -74,8 +75,7 @@ async def synthesize_speech(text: str, voice: str) -> bytes:
     
     async for chunk in communicate.stream():
         if chunk["type"] == "audio":
-            raw_chunk = strip_id3(chunk["data"])
-            audio_bytes.extend(raw_chunk)
+            audio_bytes.extend(chunk["data"])
                 
     return strip_id3(bytes(audio_bytes))
 
