@@ -15,7 +15,7 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
-      <title>Ep 03: Destaques de TI: ⁠Product Design: tendências e oportunidades para 2026</title>
+      <title>Ep 01: Destaques de TI: Product Design: tendências e oportunidades para 2026</title>
       <description>🎙️ SOBRE ESTE EPISÓDIO:
 Neste episódio completo do PodCastTI, Léo e Sara mergulham fundo em tutoriais, conceitos essenciais e dicas de carreira para estudantes e iniciantes de tecnologia!
 
@@ -33,52 +33,10 @@ Neste episódio completo do PodCastTI, Léo e Sara mergulham fundo em tutoriais,
 </description>
       <itunes:summary>Neste episódio completo do PodCastTI, Léo e Sara mergulham fundo em tutoriais, conceitos essenciais e dicas de carreira para estudantes e iniciantes de tecnologia!</itunes:summary>
       <itunes:explicit>no</itunes:explicit>
-      <guid>podcastti-ep003-20260730</guid>
+      <guid>podcastti-ep001-v3-20260730</guid>
       <pubDate>Thu, 30 Jul 2026 18:41:51 +0000</pubDate>
       <itunes:duration>00:10:11</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep03_podcastti_v2.mp3" length="3670128" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Ep 02: Destaques de TI: Guilherme Rodrigues - Apps Inteligentes No-Code e IA</title>
-      <description>🎙️ SOBRE ESTE EPISÓDIO:
-Neste episódio completo do PodCastTI, Léo e Sara mergulham fundo em tutoriais, conceitos essenciais e dicas de carreira para estudantes e iniciantes de tecnologia!
-
-⏱️ CAPÍTULOS E MARCAS DE TEMPO:
-• 00:00 - Cap 01: Intro &amp; Destaques do Dia
-• 19:00 - Cap 02: Recapitulação &amp; Dicas Finais
-
-🔗 FONTES CITADAS E LINKS RECOMENDADOS:
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep50/
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep49/
-• Blog Alura: https://www.alura.com.br/artigos/builder
-</description>
-      <itunes:summary>Neste episódio completo do PodCastTI, Léo e Sara mergulham fundo em tutoriais, conceitos essenciais e dicas de carreira para estudantes e iniciantes de tecnologia!</itunes:summary>
-      <itunes:explicit>no</itunes:explicit>
-      <guid>podcastti-ep002-20260730</guid>
-      <pubDate>Thu, 30 Jul 2026 18:41:11 +0000</pubDate>
-      <itunes:duration>00:20:00</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/temp.mp3" length="25000000" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Ep 01: Destaques de TI: Julia Labs - Hardware, leds e Projetos criativos</title>
-      <description>🎙️ SOBRE ESTE EPISÓDIO:
-Neste episódio completo do PodCastTI, Léo e Sara mergulham fundo em tutoriais, conceitos essenciais e dicas de carreira para estudantes e iniciantes de tecnologia!
-
-⏱️ CAPÍTULOS E MARCAS DE TEMPO:
-• 00:00 - Cap 01: Intro &amp; Destaques do Dia
-• 19:00 - Cap 02: Recapitulação &amp; Dicas Finais
-
-🔗 FONTES CITADAS E LINKS RECOMENDADOS:
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep53/
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep52/
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep51/
-</description>
-      <itunes:summary>Neste episódio completo do PodCastTI, Léo e Sara mergulham fundo em tutoriais, conceitos essenciais e dicas de carreira para estudantes e iniciantes de tecnologia!</itunes:summary>
-      <itunes:explicit>no</itunes:explicit>
-      <guid>podcastti-ep001-20260730</guid>
-      <pubDate>Thu, 30 Jul 2026 18:40:51 +0000</pubDate>
-      <itunes:duration>00:20:00</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/temp.mp3" length="25000000" type="audio/mpeg" />
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti_v3.mp3" length="3670128" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
