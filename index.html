@@ -571,7 +571,7 @@
         </main>
 
         <footer>
-            <p id="footer-text">© 2026 Tico & Tech • Criado por <strong style="color: #38bdf8;">Raphael Dias</strong> • Desenvolvido com Python &amp; GitHub Actions</p>
+            <p id="footer-text">© 2026 <strong>Tico &amp; Tech</strong> • Criado com ❤️ por <strong style="color: #38bdf8; font-weight: 800;">Raphael Dias</strong> • Desenvolvido com Python &amp; GitHub Actions</p>
         </footer>
     </div>
 
@@ -888,7 +888,8 @@
                         if (document.getElementById('header-description')) document.getElementById('header-description').innerText = cfg.podcast.description;
                         if (document.getElementById('footer-text')) {
                             const creator = cfg.podcast.creator || 'Raphael Dias';
-                            document.getElementById('footer-text').innerHTML = `© 2026 ${cfg.podcast.title.split(' - ')[0]} • Criado por <strong style="color: #38bdf8;">${creator}</strong> • Desenvolvido com Python &amp; GitHub Actions`;
+                            const podName = cfg.podcast.title ? cfg.podcast.title.split(' - ')[0] : 'Tico & Tech';
+                            document.getElementById('footer-text').innerHTML = `© 2026 <strong>${podName}</strong> • Criado com ❤️ por <strong style="color: #38bdf8; font-weight: 800;">${creator}</strong> • Desenvolvido com Python &amp; GitHub Actions`;
                         }
                         if (cfg.podcast.link && document.getElementById('repo-link')) document.getElementById('repo-link').href = cfg.podcast.link;
                         if (cfg.podcast.spotify_link && document.getElementById('spotify-link')) document.getElementById('spotify-link').href = cfg.podcast.spotify_link;
