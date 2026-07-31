@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tico & Tech - Tudo sobre Python, SQL & Lógica Descomplicada</title>
+    <title id="page-title">Tico & Tech - Tudo sobre Python, SQL & Lógica Descomplicada</title>
     <meta name="description" content="O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados com Tico e Tech.">
     <meta property="og:title" content="Tico & Tech - Tudo sobre Python, SQL & Lógica Descomplicada">
     <meta property="og:description" content="Novos episódios diariamente às 07:00 da manhã (horário de Brasília). Aprenda Python, SQL e Lógica Descomplicada com Tico e Tech.">
@@ -502,13 +502,13 @@
         <header>
             <div class="cover-wrapper">
                 <img src="cover.jpg" alt="Capa Oficial Tico & Tech" class="cover-img">
-                <span class="live-badge-glow">NOVO LAYOUT & CAPA</span>
+                <span class="live-badge-glow">POWERED BY IA</span>
             </div>
-            <h1>TICO & TECH</h1>
+            <h1 id="header-podcast-title">TICO & TECH</h1>
             <div class="badge">
-                <span>⚡</span> Tudo sobre <strong style="color:#38bdf8; margin: 0 4px;">Python</strong>, <strong style="color:#ec4899; margin: 0 4px;">SQL</strong> & <strong style="color:#facc15; margin: 0 4px;">Lógica Descomplicada</strong>
+                <span>⚡</span> <span id="header-tagline">Tudo sobre Python, SQL & Lógica Descomplicada</span>
             </div>
-            <p class="description">
+            <p class="description" id="header-description">
                 O podcast diário que traduz o "tecniquês" em conversas leves e diretas ao ponto. Acompanhe a jornada de <span class="tag-pill">Tico</span> e <span class="tag-pill">Tech</span> desvendando códigos, bancos de dados e algoritmos do zero!
             </p>
         </header>
@@ -517,13 +517,13 @@
             <!-- Card de Apresentadores -->
             <section class="card">
                 <h2 class="card-title">🎙️ Apresentadores & Mascote de IA</h2>
-                <div class="hosts-grid">
+                <div class="hosts-grid" id="hosts-grid">
                     <div class="host-box">
-                        <div class="host-name">👨‍💻 Tico (Voz Antonio)</div>
+                        <div class="host-name">👨‍💻 Tico</div>
                         <div class="host-role">Estudante entusiasta de TI. Faz as perguntas reais de quem está aprendendo a programar e praticando Python e SQL.</div>
                     </div>
                     <div class="host-box">
-                        <div class="host-name">👩‍💻 Tech (Voz Francisca)</div>
+                        <div class="host-name">👩‍💻 Tech</div>
                         <div class="host-role">Tutora especialista em TI e Dados. Explica conceitos complexos com analogias do dia a dia e dicas práticas de código.</div>
                     </div>
                     <div class="host-box">
@@ -554,14 +554,24 @@
                 <a href="rss.xml" class="btn btn-primary" target="_blank">
                     📡 Assinar Feed RSS
                 </a>
-                <a href="https://github.com/Rapha-Dias/PodCastTI" class="btn btn-secondary" target="_blank">
+                <a href="https://github.com/Rapha-Dias/PodCastTI" id="repo-link" class="btn btn-secondary" target="_blank">
                     💻 Repositório GitHub
+                </a>
+            </div>
+
+            <!-- Seção do Badge Oficial do Spotify Podcast -->
+            <div style="text-align: center; margin-top: 35px; margin-bottom: 10px;">
+                <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px;">
+                    🎧 Ouça no Spotify &amp; Principais Agregadores
+                </p>
+                <a href="https://open.spotify.com/show/033YLFBFRFhv5bpJLlb6QT" id="spotify-link" target="_blank" rel="noopener noreferrer" style="display: inline-block; transition: transform 0.2s ease;" onmouseover="this.style.transform='scale(1.06)';" onmouseout="this.style.transform='scale(1.00)';">
+                    <img src="spotify-podcast-badges/PNG/spotify-podcast-badge-blk-grn-330x80.png" alt="Listen on Spotify Podcast" style="height: 46px; border-radius: 8px; box-shadow: 0 6px 20px rgba(30, 215, 96, 0.25);">
                 </a>
             </div>
         </main>
 
         <footer>
-            <p>© 2026 Tico & Tech • Desenvolvido com Python, Edge-TTS & GitHub Actions</p>
+            <p id="footer-text">© 2026 Tico & Tech • Criado por <strong style="color: #38bdf8;">Raphael Dias</strong> • Desenvolvido com Python &amp; GitHub Actions</p>
         </footer>
     </div>
 
@@ -867,6 +877,44 @@
         }
 
         async function initApp() {
+            try {
+                const configRes = await fetch('podcast_config.json');
+                if (configRes.ok) {
+                    const cfg = await configRes.json();
+                    if (cfg.podcast) {
+                        document.getElementById('page-title').innerText = `${cfg.podcast.title}`;
+                        document.getElementById('header-podcast-title').innerText = cfg.podcast.title;
+                        if (document.getElementById('header-tagline')) document.getElementById('header-tagline').innerText = cfg.podcast.tagline;
+                        if (document.getElementById('header-description')) document.getElementById('header-description').innerText = cfg.podcast.description;
+                        if (document.getElementById('footer-text')) {
+                            const creator = cfg.podcast.creator || 'Raphael Dias';
+                            document.getElementById('footer-text').innerHTML = `© 2026 ${cfg.podcast.title.split(' - ')[0]} • Criado por <strong style="color: #38bdf8;">${creator}</strong> • Desenvolvido com Python &amp; GitHub Actions`;
+                        }
+                        if (cfg.podcast.link && document.getElementById('repo-link')) document.getElementById('repo-link').href = cfg.podcast.link;
+                        if (cfg.podcast.spotify_link && document.getElementById('spotify-link')) document.getElementById('spotify-link').href = cfg.podcast.spotify_link;
+                    }
+                    if (cfg.hosts && document.getElementById('hosts-grid')) {
+                        const grid = document.getElementById('hosts-grid');
+                        grid.innerHTML = `
+                            <div class="host-box">
+                                <div class="host-name">👨‍💻 ${cfg.hosts.host_1.name}</div>
+                                <div class="host-role">${cfg.hosts.host_1.role}</div>
+                            </div>
+                            <div class="host-box">
+                                <div class="host-name">👩‍💻 ${cfg.hosts.host_2.name}</div>
+                                <div class="host-role">${cfg.hosts.host_2.role}</div>
+                            </div>
+                            <div class="host-box">
+                                <div class="host-name">🤖 ${cfg.hosts.mascot.name}</div>
+                                <div class="host-role">${cfg.hosts.mascot.role}</div>
+                            </div>
+                        `;
+                    }
+                }
+            } catch (err) {
+                console.log("Aviso ao carregar podcast_config.json:", err);
+            }
+
             try {
                 const res = await fetch('data/episodes.json');
                 if (!res.ok) return;

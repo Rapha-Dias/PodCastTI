@@ -3,8 +3,9 @@
   <channel>
     <title>Tico &amp; Tech - Tudo sobre Python, SQL &amp; Lógica Descomplicada</title>
     <link>https://rapha-dias.github.io/PodCastTI</link>
-    <description>O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados com Tico e Tech. ⏰ Novos episódios diariamente às 07:00 da manhã (horário de Brasília).</description>
+    <description>O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados com Tico e Tech. Novos episódios diariamente às 07:00 da manhã (horário de Brasília).</description>
     <language>pt-br</language>
+    <itunes:type>episodic</itunes:type>
     <itunes:author>Tico &amp; Tech</itunes:author>
     <itunes:explicit>no</itunes:explicit>
     <itunes:owner>
@@ -12,6 +13,11 @@
       <itunes:email>rdias@live.com</itunes:email>
     </itunes:owner>
     <managingEditor>rdias@live.com (Tico &amp; Tech)</managingEditor>
+    <image>
+      <url>https://rapha-dias.github.io/PodCastTI/cover.jpg</url>
+      <title>Tico &amp; Tech - Tudo sobre Python, SQL &amp; Lógica Descomplicada</title>
+      <link>https://rapha-dias.github.io/PodCastTI</link>
+    </image>
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
@@ -33,7 +39,7 @@ Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tuto
 </description>
       <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais e dicas de carreira para estudantes e iniciantes de tecnologia!</itunes:summary>
       <itunes:explicit>no</itunes:explicit>
-      <guid>podcastti-ep001-v3-20260730</guid>
+      <guid isPermaLink="false">podcastti-ep001-v3-20260730</guid>
       <pubDate>Thu, 30 Jul 2026 18:41:51 +0000</pubDate>
       <itunes:duration>00:10:11</itunes:duration>
       <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep01_podcastti_v3.mp3" length="3670128" type="audio/mpeg" />

@@ -1,6 +1,6 @@
 # 🎙️ Tico & Tech - Podcast sobre Python, SQL & Lógica Descomplicada
 
-> O podcast diário que traduz o **"tecniquês"** em conversas leves e diretas sobre **Python, SQL, Lógica de Programação e Ciência de Dados** para estudantes e iniciantes!
+> O podcast diário que traduz o **"tecniquês"** em conversas leves e diretas sobre **Python, SQL, Lógica de Programação e Ciência de Dados** para estudantes e iniciantes! Criado por **Raphael Dias**.
 
 ---
 
@@ -20,6 +20,8 @@
   - Partículas flutuantes com elementos de código (`print("Olá!");`, `SELECT *`, `if-else`, `for-loops`, `lambda`, `{ }`, `</>`, `🐍 Python`, `📊 SQL`).
   - Parallax interativo com o movimento do mouse.
   - Botão de controle de Vídeo de Fundo (ON / OFF).
+- **Badge Oficial do Spotify Podcast:** Link direto e selo oficial interativo para ouvir no Spotify.
+- **Configurações Centralizadas (`podcast_config.json`):** Toda a identidade, vozes, apresentadores, feeds RSS e links são gerenciados dinamicamente.
 
 ---
 
@@ -34,6 +36,7 @@ PodCastTI/
 │       └── daily_podcast.yml  # Automação diária no GitHub Actions
 ├── podcastti/                 # Pacote principal da aplicação
 │   ├── __init__.py
+│   ├── config_loader.py       # Carregador dinâmico do podcast_config.json
 │   ├── news_fetcher.py        # Coleta matérias reais de feeds RSS de TI
 │   ├── script_generator.py    # Gera o roteiro estruturado em JSON via Gemini AI
 │   ├── audio_generator.py     # Sintetiza diálogos em MP3 com vozes neurais (edge-tts)
@@ -42,12 +45,14 @@ PodCastTI/
 ├── data/
 │   └── episodes.json          # Banco de dados (JSON) dos episódios
 ├── episodes/                  # MP3s dos episódios gerados
+├── spotify-podcast-badges/    # Badges oficiais do Spotify Podcast
+├── podcast_config.json        # Arquivo de configuração centralizado
 ├── main.py                    # Ponto de entrada CLI (python main.py)
 ├── cover.jpg                  # Capa oficial do Tico & Tech
 ├── index.html                 # Player web interativo com vídeo de fundo
 ├── rss.xml                    # Feed RSS final publicado
 ├── requirements.txt           # Dependências do projeto
-├── test_all.py                # Suíte completa de testes
+├── test_all.py                # Suíte completa de testes (6/6 aprovados)
 └── PROMPT.md                  # Diretrizes e regras do gerador
 ```
 
@@ -78,11 +83,19 @@ python main.py
 
 ---
 
-## 📡 Integração com o Spotify & agregadores
+## 📡 Integração com o Spotify & Agregadores
 
 O podcast publica automaticamente no **Spotify** e outros agregadores através do arquivo `rss.xml` hospedado no **GitHub Pages**:
 
 - **URL do Feed RSS:** `https://rapha-dias.github.io/PodCastTI/rss.xml`
+- **Spotify Podcast:** [Tico & Tech no Spotify](https://open.spotify.com/show/033YLFBFRFhv5bpJLlb6QT)
+
+---
+
+## 👤 Criador & Créditos
+
+- **Criado por:** Raphael Dias (`rdias@live.com`)
+- **Desenvolvido com:** Python, Edge-TTS, Gemini AI & GitHub Actions
 
 ---
 

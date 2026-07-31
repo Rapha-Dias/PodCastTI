@@ -1,9 +1,12 @@
 import os
 import re
 import edge_tts
+from podcastti.config_loader import load_config
 
-VOICE_TICO = "pt-BR-AntonioNeural"
-VOICE_TECH = "pt-BR-FranciscaNeural"
+cfg = load_config()
+hosts_cfg = cfg.get("hosts", {})
+VOICE_TICO = hosts_cfg.get("host_1", {}).get("voice", "pt-BR-AntonioNeural")
+VOICE_TECH = hosts_cfg.get("host_2", {}).get("voice", "pt-BR-FranciscaNeural")
 VOICE_LEO = VOICE_TICO
 VOICE_SARA = VOICE_TECH
 

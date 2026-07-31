@@ -1,0 +1,50 @@
+{
+  "podcast": {
+    "title": "Tico & Tech - Tudo sobre Python, SQL & Lógica Descomplicada",
+    "tagline": "Tudo sobre Python, SQL & Lógica Descomplicada",
+    "description": "O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados com Tico e Tech. Novos episódios diariamente às 07:00 da manhã (horário de Brasília).",
+    "author": "Tico & Tech",
+    "creator": "Raphael Dias",
+    "email": "rdias@live.com",
+    "link": "https://rapha-dias.github.io/PodCastTI",
+    "spotify_link": "https://open.spotify.com/show/033YLFBFRFhv5bpJLlb6QT",
+    "category": "Technology",
+    "language": "pt-br",
+    "schedule_time_brt": "07:00 da manhã"
+  },
+  "hosts": {
+    "host_1": {
+      "name": "Tico",
+      "voice": "pt-BR-AntonioNeural",
+      "role": "O estudante curioso e dedicado. Faz perguntas de leigo, expressa as dúvidas reais de quem está aprendendo Python, SQL e Lógica de Programação e traz leveza ao episódio.",
+      "gender": "male"
+    },
+    "host_2": {
+      "name": "Tech",
+      "voice": "pt-BR-FranciscaNeural",
+      "role": "A tutora especialista em TI e Dados. Explica conceitos complexos com analogias simples do dia a dia e orienta estudantes com dicas práticas de código e carreira.",
+      "gender": "female"
+    },
+    "mascot": {
+      "name": "Robô de IA",
+      "role": "O assistente robô que busca notícias em tempo real via RSS Feeds, organiza tópicos técnicos e apoia na automação do programa."
+    }
+  },
+  "feeds": [
+    {
+      "name": "freeCodeCamp PT",
+      "url": "https://www.freecodecamp.org/portuguese/news/rss/"
+    },
+    {
+      "name": "Blog Alura",
+      "url": "https://www.alura.com.br/artigos/rss"
+    },
+    {
+      "name": "TabNews",
+      "url": "https://www.tabnews.com.br/rss"
+    }
+  ],
+  "keywords": [
+    "python", "sql", "logica", "programacao", "banco de dados", "git", "github", "dados", "data", "algoritmo", "desenvolvimento", "codigo", "backend", "frontend", "estudo", "carreira", "tecnologia", "ia"
+  ]
+}
