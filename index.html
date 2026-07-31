@@ -922,6 +922,7 @@
                 allEpisodes = await res.json();
                 
                 if (allEpisodes && allEpisodes.length > 0) {
+                    allEpisodes = allEpisodes.slice(0, 3);
                     loadEpisodeIntoPlayer(allEpisodes[0]);
 
                     if (allEpisodes.length > 1) {
@@ -929,7 +930,7 @@
                         const historyContent = document.getElementById('history-content');
                         historyCard.style.display = 'block';
                         
-                        historyContent.innerHTML = allEpisodes.slice(1).map((ep, idx) => `
+                        historyContent.innerHTML = allEpisodes.slice(1, 3).map((ep, idx) => `
                             <div class="history-item">
                                 <div class="history-info">
                                     <h4>${ep.title}</h4>

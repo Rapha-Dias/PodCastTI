@@ -23,10 +23,34 @@ def load_episodes():
     return []
 
 def save_episodes(episodes):
+    # Limita o histórico mantendo apenas os 3 episódios mais recentes
+    episodes = episodes[:3]
     with open(EPISODES_FILE, "w", encoding="utf-8") as f:
         json.dump(episodes, f, ensure_ascii=False, indent=2)
 
+    # Remove arquivos MP3 antigos do diretório episodes/ que não estejam entre os 3 episódios mantidos
+    episodes_dir = os.path.join(BASE_DIR, "episodes")
+    if os.path.exists(episodes_dir):
+        active_filenames = set()
+        for ep in episodes:
+            audio_url = ep.get("audio_url", "")
+            if audio_url:
+                active_filenames.add(os.path.basename(audio_url))
+            local_path = ep.get("local_audio_path", "")
+            if local_path:
+                active_filenames.add(os.path.basename(local_path))
+        
+        for fname in os.listdir(episodes_dir):
+            if fname.endswith(".mp3") and fname not in active_filenames:
+                try:
+                    os.remove(os.path.join(episodes_dir, fname))
+                    print(f"[OK] Áudio antigo removido para manter apenas os últimos 3: {fname}")
+                except Exception as e:
+                    print(f"[!] Não foi possível remover áudio antigo {fname}: {e}")
+
 def generate_rss_xml(episodes):
+    # Garante no máximo os 3 episódios mais recentes no RSS
+    episodes = episodes[:3]
     cfg = load_config()
     p = cfg["podcast"]
     podcast_title = p.get("title", "Tico & Tech")
@@ -99,7 +123,8 @@ def generate_rss_xml(episodes):
 
 def add_new_episode(title, summary, script_text, audio_url, chapters, sources, audio_bytes=25000000):
     episodes = load_episodes()
-    ep_num = len(episodes) + 1
+    max_id = max([ep.get("id", 0) for ep in episodes], default=0)
+    ep_num = max_id + 1
     today_str = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
     guid = f"ticotech-ep{ep_num:03d}-{datetime.now().strftime('%Y%m%d')}"
     
@@ -129,6 +154,7 @@ def add_new_episode(title, summary, script_text, audio_url, chapters, sources, a
     }
     
     episodes.insert(0, new_ep)
+    episodes = episodes[:3]
     save_episodes(episodes)
     generate_rss_xml(episodes)
     return new_ep

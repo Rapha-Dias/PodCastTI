@@ -24,11 +24,12 @@ def run_suite():
         with open(json_path, "r", encoding="utf-8") as f:
             episodes = json.load(f)
         assert isinstance(episodes, list), "O conteúdo de episodes.json deve ser uma lista!"
+        assert len(episodes) <= 3, f"O histórico de episódios deve conter no máximo 3 episódios (encontrado: {len(episodes)})"
         if len(episodes) > 0:
             ep = episodes[0]
             assert "audio_url" in ep, "URL do áudio inválida no episódio!"
             assert "description" in ep, "Descrição ausente no episódio!"
-            print(f"  ✅ APROVADO: {len(episodes)} episódio(s) no histórico. Último: '{ep.get('title')}'")
+            print(f"  ✅ APROVADO: {len(episodes)} episódio(s) no histórico (máx 3). Último: '{ep.get('title')}'")
         else:
             print("  ✅ APROVADO: Registro JSON pronto (lista vazia para início do projeto).")
         passed_tests += 1
