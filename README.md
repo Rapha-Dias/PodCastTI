@@ -88,7 +88,7 @@ python main.py
 O podcast publica automaticamente no **Spotify** e outros agregadores através do arquivo `rss.xml` hospedado no **GitHub Pages**:
 
 - **URL do Feed RSS:** `https://rapha-dias.github.io/PodCastTI/rss.xml`
-- **Spotify Podcast:** [Tico & Tech no Spotify](https://open.spotify.com/show/033YLFBFRFhv5bpJLlb6QT)
+- **Spotify Podcast:** [Tico & Tech no Spotify](https://open.spotify.com/show/033XEfH7nMak9XeKKyUXmG)
 
 ---
 
