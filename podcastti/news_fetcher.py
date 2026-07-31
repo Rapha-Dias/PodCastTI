@@ -25,7 +25,7 @@ def clean_html(text: str) -> str:
 def fetch_feed_data(url: str, timeout: int = 4) -> bytes:
     req = urllib.request.Request(
         url,
-        headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) PodCastTIBot/2.0"}
+        headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) TicoTechBot/2.0"}
     )
     context = ssl._create_unverified_context()
     with urllib.request.urlopen(req, timeout=timeout, context=context) as resp:
@@ -80,13 +80,13 @@ def fetch_tech_news(max_items: int = 4, exclude_links: list = None) -> list:
                 "title": "Fundamentos de Python e Lógica de Programação para Iniciantes",
                 "link": "https://www.freecodecamp.org/portuguese/news/python-logica-iniciantes",
                 "summary": "Conceitos fundamentais de variáveis, estruturas condicionais e laços de repetição explicados com analogias do dia a dia.",
-                "source": "PodCastTI Educação"
+                "source": "Tico & Tech Educação"
             },
             {
                 "title": "SQL e Bancos de Dados Relacionais: Dominando SELECT, WHERE e JOIN",
                 "link": "https://www.alura.com.br/artigos/sql-banco-de-dados-iniciantes",
                 "summary": "Guia prático para consultar tabelas de e-commerce, filtrar dados relevantes e realizar junções entre tabelas sem complicação.",
-                "source": "PodCastTI Dados"
+                "source": "Tico & Tech Dados"
             }
         ]
         for fb in fallback_topics:

@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def run_suite():
     print("=" * 60)
-    print("🧪 EXECUTANDO SUÍTE DE TESTES DO PODCAST TI")
+    print("🧪 EXECUTANDO SUÍTE DE TESTES DO TICO & TECH")
     print("=" * 60)
     
     passed_tests = 0
@@ -46,7 +46,7 @@ def run_suite():
         channel = root.find("channel")
         assert channel is not None, "Tag <channel> ausente!"
         title = channel.find("title").text
-        assert "PodCastTI" in title, "Título do canal incorreto!"
+        assert "Tico & Tech" in title or "PodCastTI" in title, "Título do canal incorreto!"
         items = channel.findall("item")
         print(f"  ✅ APROVADO: Feed RSS válido. Canal: '{title}', Episódios listados: {len(items)}")
         passed_tests += 1

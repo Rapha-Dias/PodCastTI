@@ -2,8 +2,10 @@ import os
 import re
 import edge_tts
 
-VOICE_LEO = "pt-BR-AntonioNeural"
-VOICE_SARA = "pt-BR-FranciscaNeural"
+VOICE_TICO = "pt-BR-AntonioNeural"
+VOICE_TECH = "pt-BR-FranciscaNeural"
+VOICE_LEO = VOICE_TICO
+VOICE_SARA = VOICE_TECH
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_DIR = os.path.join(BASE_DIR, "episodes")
@@ -90,10 +92,13 @@ def parse_sections(script_text: str):
         if not line:
             continue
             
-        speaker_match = re.match(r'^(?:\*\*|\*)?\s*(Léo|Leo|Sara)\s*(?:\*\*|\*)?\s*:\s*(.*)', line, re.IGNORECASE)
+        speaker_match = re.match(r'^(?:\*\*|\*)?\s*(Tico|Tech|Léo|Leo|Sara)\s*(?:\*\*|\*)?\s*:\s*(.*)', line, re.IGNORECASE)
         if speaker_match:
             raw_speaker = speaker_match.group(1).lower()
-            speaker = "Léo" if ("léo" in raw_speaker or "leo" in raw_speaker) else "Sara"
+            if "tico" in raw_speaker or "léo" in raw_speaker or "leo" in raw_speaker:
+                speaker = "Tico"
+            else:
+                speaker = "Tech"
             text = speaker_match.group(2).strip()
             if text:
                 current_lines.append((speaker, text))
@@ -145,7 +150,7 @@ async def generate_audio_for_episode(ep):
         
         print(f"  - Marcador [{timestamp_str}] Cap {idx:02d}: {clean_title}")
         for speaker, text in dialogues:
-            voice = VOICE_LEO if speaker == "Léo" else VOICE_SARA
+            voice = VOICE_TICO if speaker == "Tico" else VOICE_TECH
             chunk_audio = await synthesize_speech(text, voice)
             if chunk_audio:
                 full_audio.extend(chunk_audio)

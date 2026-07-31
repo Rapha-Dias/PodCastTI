@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>PodCastTI - Tecnologia e Dados para Iniciantes</title>
+    <title>Tico &amp; Tech - Tudo sobre Python, SQL &amp; Lógica Descomplicada</title>
     <link>https://rapha-dias.github.io/PodCastTI</link>
-    <description>O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados para quem está começando na faculdade ou transição de carreira. ⏰ Novos episódios diariamente às 07:00 da manhã (horário de Brasília).</description>
+    <description>O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados com Tico e Tech. ⏰ Novos episódios diariamente às 07:00 da manhã (horário de Brasília).</description>
     <language>pt-br</language>
-    <itunes:author>Léo &amp; Sara</itunes:author>
+    <itunes:author>Tico &amp; Tech</itunes:author>
     <itunes:explicit>no</itunes:explicit>
     <itunes:owner>
-      <itunes:name>Léo &amp; Sara</itunes:name>
+      <itunes:name>Tico &amp; Tech</itunes:name>
       <itunes:email>rdias@live.com</itunes:email>
     </itunes:owner>
-    <managingEditor>rdias@live.com (Léo &amp; Sara)</managingEditor>
+    <managingEditor>rdias@live.com (Tico &amp; Tech)</managingEditor>
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
       <title>Ep 01: Destaques de TI: Product Design: tendências e oportunidades para 2026</title>
       <description>🎙️ SOBRE ESTE EPISÓDIO:
-Neste episódio completo do PodCastTI, Léo e Sara mergulham fundo em tutoriais, conceitos essenciais e dicas de carreira para estudantes e iniciantes de tecnologia!
+Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais e dicas de carreira para estudantes e iniciantes de tecnologia!
 
 ⏱️ CAPÍTULOS E MARCAS DE TEMPO:
 • 00:00 - Cap 01: INTRODUÇÃO
@@ -31,7 +31,7 @@ Neste episódio completo do PodCastTI, Léo e Sara mergulham fundo em tutoriais,
 • Blog Alura: https://www.alura.com.br/artigos/mcp-o-que-e
 • Blog Alura: https://www.alura.com.br/artigos/eua-avaliam-restringir-uso-de-ias-chinesas
 </description>
-      <itunes:summary>Neste episódio completo do PodCastTI, Léo e Sara mergulham fundo em tutoriais, conceitos essenciais e dicas de carreira para estudantes e iniciantes de tecnologia!</itunes:summary>
+      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais e dicas de carreira para estudantes e iniciantes de tecnologia!</itunes:summary>
       <itunes:explicit>no</itunes:explicit>
       <guid>podcastti-ep001-v3-20260730</guid>
       <pubDate>Thu, 30 Jul 2026 18:41:51 +0000</pubDate>

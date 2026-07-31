@@ -1,4 +1,4 @@
-name: PodCastTI Daily Automation
+name: Tico & Tech Daily Automation
 
 on:
   schedule:
@@ -38,11 +38,11 @@ jobs:
 
       - name: Fazer Commit e Push do Novo Episódio
         run: |
-          git config --global user.name 'PodCastTI Bot'
-          git config --global user.email 'bot@podcastti.local'
+          git config --global user.name 'Tico & Tech Bot'
+          git config --global user.email 'bot@ticotech.local'
           git fetch origin main
           git reset --soft origin/main
-          git add data/episodes.json rss.xml episodes/
-          git commit -m "auto: Publicado novo episódio do PodCastTI" || exit 0
+          git add data/episodes.json rss.xml episodes/ index.html cover.jpg
+          git commit -m "auto: Publicado novo episódio do Tico & Tech" || exit 0
           git push origin HEAD:main || (git fetch origin main && git rebase -Xours origin/main && git push origin HEAD:main)
 

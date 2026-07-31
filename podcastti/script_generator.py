@@ -4,20 +4,20 @@ import json
 from google import genai
 
 PROMPT_RULES = """
-Você é um curador de conteúdo educacional e roteirista sênior de podcasts de TI.
-Sua missão é gerar um roteiro de podcast dinâmico, didático, altamente envolvente e EXTENSO para o PodCastTI (duração estimada de 18 a 22 minutos de conversa falada).
+Você é um curador de conteúdo educacional e roteirista sênior do podcast 'Tico & Tech'.
+Sua missão é gerar um roteiro de podcast dinâmico, didático, altamente envolvente e EXTENSO para o Tico & Tech (duração estimada de 18 a 22 minutos de conversa falada).
 
 Apresentadores:
-- Léo: O estudante e iniciante curioso. Faz perguntas simples de leigo, expressa dúvidas reais de quem está começando na faculdade ou transição de carreira, pede exemplos práticos e resumos simples.
-- Sara: A tutora especialista e encorajadora. Explica os conceitos com profundidade, utilizando analogias do cotidiano (ex: cozinha, trânsito, supermercado, construção) e dá dicas valiosas de estudo, carreira e código.
+- Tico: O estudante curioso e entusiasta de programação. Faz perguntas simples de leigo, expressa dúvidas reais de quem está começando a aprender Python, SQL e Lógica Descomplicada, pede exemplos práticos e resumos simples.
+- Tech: A tutora especialista em TI e Dados. Explica os conceitos com profundidade, utilizando analogias do cotidiano (ex: cozinha, trânsito, supermercado, robôs) e dá dicas valiosas de estudo, carreira e código.
 
 REGRAS DE CONTEÚDO E FALA NATURAL (EXTREMAMENTE IMPORTANTE):
 1. NUNCA cite números de episódios de outros conteúdos (ex: NUNCA diga "Ep. 53", "Ep 50", "Episódio 49").
 2. NUNCA cite nomes de fontes de notícias ou sites em voz alta (ex: NUNCA diga "veio do freeCodeCamp PT", "no site TabNews", etc.).
 3. NUNCA cite links ou URLs no meio da fala.
-4. Léo e Sara devem introduzir os assuntos de forma 100% natural e conversacional. Exemplo correto:
-   Léo: Sara, vi que tem muita gente comentando sobre o trabalho da Júlia Labs com Hardware e LEDs. Como que um iniciante pode começar na eletrônica?
-   Sara: Essa área é fantástica, Léo! Muita gente acha que precisa ser um gênio da física para mexer com hardware, mas na verdade...
+4. Tico e Tech devem introduzir os assuntos de forma 100% natural e conversacional. Exemplo correto:
+   Tico: Tech, vi que tem muita gente comentando sobre Python para automação. Como que um iniciante pode começar sem se assustar?
+   Tech: Essa área é fantástica, Tico! Muita gente acha que precisa memorizar tudo de cabeça, mas na verdade a lógica por trás é super simples...
 
 REGRAS DE DURAÇÃO (18 a 22 MINUTOS):
 - O ROTEIRO DEVE SER LONGO, COMPLETO E APROFUNDADO (Aproximadamente 2.500 a 3.000 palavras no total).
@@ -26,7 +26,7 @@ REGRAS DE DURAÇÃO (18 a 22 MINUTOS):
 
 Regras de Formatação:
 1. O diálogo DEVE ter marcações claras de tempo [MM:SS] no início de cada bloco.
-2. Cada linha de diálogo deve começar com 'Léo:' ou 'Sara:'.
+2. Cada linha de diálogo deve começar com 'Tico:' ou 'Tech:'.
 3. Exemplo de marcação de bloco: [00:00] INTRODUÇÃO
 
 Retorne estritamente um objeto JSON com a seguinte estrutura:
@@ -44,7 +44,7 @@ Retorne estritamente um objeto JSON com a seguinte estrutura:
     ["Nome da Fonte 1", "https://url1.com"],
     ["Nome da Fonte 2", "https://url2.com"]
   ],
-  "script": "[00:00] INTRODUÇÃO\\nLéo: ...\\nSara: ...\\n\\n[02:30] BLOCO 1\\n..."
+  "script": "[00:00] INTRODUÇÃO\\nTico: ...\\nTech: ...\\n\\n[02:30] BLOCO 1\\n..."
 }
 """
 
@@ -94,7 +94,7 @@ def generate_script_with_ai(news_items):
                 if script_text:
                     data["script"] = script_text
                     data["title"] = title_text
-                    data.setdefault("summary", "Neste episódio do PodCastTI, Léo e Sara analisam em profundidade as principais novidades de TI para estudantes e iniciantes!")
+                    data.setdefault("summary", "Neste episódio do Tico & Tech, Tico e Tech analisam em profundidade Python, SQL e Lógica Descomplicada para estudantes e iniciantes!")
                     data.setdefault("chapters", [["00:00", "Intro & Destaques do Dia"]])
                     data.setdefault("sources", [[item['source'], item['link']] for item in news_items])
                     print("[OK] Roteiro extenso gerado com sucesso via Gemini AI!")
@@ -106,16 +106,16 @@ def generate_script_with_ai(news_items):
     print("[+] Montando roteiro extenso didático (Fallback de alta profundidade)...")
     first_clean_title = clean_topic_title(news_items[0]['title']) if news_items else 'Lógica e Programação'
     title = f"Destaques de TI: {first_clean_title}"
-    summary = "Neste episódio completo do PodCastTI, Léo e Sara mergulham fundo em tutoriais, conceitos essenciais e dicas de carreira para estudantes e iniciantes de tecnologia!"
+    summary = "Neste episódio completo do Tico & Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!"
     
     chapters = [["00:00", "Intro & Destaques do Dia"]]
     sources = []
     
     script_lines = [
         "[00:00] INTRODUÇÃO",
-        "Léo: Olá, pessoal! Sejam muito bem-vindos ao PodCastTI, o seu espaço diário para descomplicar a tecnologia, dados e desenvolvimento!",
-        "Sara: Fala, gente! Eu sou a Sara e hoje preparamos um episódio super completo. Vamos conversar com calma e em profundidade sobre os tópicos que mais geram dúvidas em quem está começando na faculdade ou em transição de carreira.",
-        "Léo: É isso mesmo, Sara! Nosso objetivo aqui é tirar aquele peso de encarar termos difíceis e mostrar como cada conceito funciona na prática. Peguem seu café, ajustem os fones e vamos nessa!"
+        "Tico: Olá, pessoal! Sejam muito bem-vindos ao Tico & Tech, o seu espaço diário para descomplicar Python, SQL e Lógica de Programação!",
+        "Tech: Fala, gente! Eu sou a Tech e hoje preparamos um episódio super completo. Vamos conversar com calma e em profundidade sobre os tópicos que mais geram dúvidas em quem está começando na faculdade ou em transição de carreira.",
+        "Tico: É isso mesmo, Tech! Nosso objetivo aqui é tirar aquele peso de encarar termos difíceis e mostrar como cada conceito funciona na prática. Peguem seu café, ajustem os fones e vamos nessa!"
     ]
     
     for idx, item in enumerate(news_items[:3]):
@@ -124,25 +124,25 @@ def generate_script_with_ai(news_items):
         
         script_lines.extend([
             f"\n[00:00] BLOCO {idx+1}: {clean_title.upper()}",
-            f"Léo: Sara, hoje vamos conversar sobre {clean_title}. Muita gente que está começando ouve falar disso e fica sem saber por onde dar o primeiro passo. O que exatamente significa esse conceito na prática?",
-            f"Sara: Excelente ponto, Léo! Para entender {clean_title}, vale a pena pensar em uma analogia do cotidiano. Imagine um sistema de organização doméstica ou uma cozinha de restaurante bem estruturada. {item['summary']} Se você não tem regras claras, o caos se instala rapidamente. Na tecnologia, esse conceito traz justamente a ordem e a automação que precisamos.",
-            f"Léo: Que sensacional! Mas deixa eu te fazer uma pergunta de leigo: por que tantas pessoas acham isso difícil no começo? Onde é que os estudantes costumam travar?",
-            f"Sara: O maior obstáculo é o excesso de informação! Muitos iniciantes tentam aprender todas as ferramentas, linguagens e frameworks ao mesmo tempo. Em vez de dominar a base da lógica e entender o porquê das coisas, tentam memorizar sintaxe de código. Isso gera uma sobrecarga mental imensa.",
-            f"Léo: Caramba, passei exatamente por isso no meu primeiro semestre! Eu tentava decorar os comandos em vez de entender a lógica por trás. E como a gente faz para virar essa chave?",
-            f"Sara: A melhor estratégia é aplicar o método de pequenos passos, ou baby steps. Pegue um problema grande, quebre em três partes simples e resolva uma de cada vez. Escreva em papel ou num quadro branco antes de ir para o teclado. Quando você desenha o fluxo primeiro, a implementação sai muito mais natural.",
-            f"Léo: Boa! E quando a gente fala do mercado de trabalho, Sara? Como é que um estudante pode demonstrar que sabe aplicar esse conceito em uma entrevista de emprego ou num projeto do GitHub?",
-            f"Sara: Os recrutadores e líderes técnicos procuram pessoas que saibam explicar a resolução do problema com clareza. Não basta apenas postar o código no GitHub; é fundamental escrever um bom arquivo README explicando o contexto, o desafio enfrentado e as decisões técnicas que você tomou. Isso demonstra maturidade profissional!",
-            f"Léo: E para quem quer praticar hoje mesmo, qual seria o primeiro exercício prático recomendado?",
-            f"Sara: Comece criando pequenos scripts e projetos pessoais que resolvam dores simples do seu dia a dia. Pode ser uma planilha automatizada em Python, um pequeno script de organização de arquivos ou uma consulta simples a um banco de dados SQL. O importante é ver a tecnologia funcionando e gerar aquele sentimento de conquista!",
-            f"Léo: Incrível, Sara! Essa visão prática muda tudo. Certeza de que essa conversa vai dar uma clareza enorme para quem está nos ouvindo!"
+            f"Tico: Tech, hoje vamos conversar sobre {clean_title}. Muita gente que está começando ouve falar disso e fica sem saber por onde dar o primeiro passo. O que exatamente significa esse conceito na prática?",
+            f"Tech: Excelente ponto, Tico! Para entender {clean_title}, vale a pena pensar em uma analogia do cotidiano. Imagine um sistema de organização doméstica ou uma cozinha de restaurante bem estruturada. {item['summary']} Se você não tem regras claras, o caos se instala rapidamente. Na tecnologia, esse conceito traz justamente a ordem e a automação que precisamos.",
+            f"Tico: Que sensacional! Mas deixa eu te fazer uma pergunta de leigo: por que tantas pessoas acham isso difícil no começo? Onde é que os estudantes costumam travar?",
+            f"Tech: O maior obstáculo é o excesso de informação! Muitos iniciantes tentam aprender todas as ferramentas, linguagens e frameworks ao mesmo tempo. Em vez de dominar a base da lógica e entender o porquê das coisas, tentam memorizar sintaxe de código. Isso gera uma sobrecarga mental imensa.",
+            f"Tico: Caramba, passei exatamente por isso no meu primeiro semestre! Eu tentava decorar os comandos em vez de entender a lógica por trás. E como a gente faz para virar essa chave?",
+            f"Tech: A melhor estratégia é aplicar o método de pequenos passos, ou baby steps. Pegue um problema grande, quebre em três partes simples e resolva uma de cada vez. Escreva em papel ou num quadro branco antes de ir para o teclado. Quando você desenha o fluxo primeiro, a implementação sai muito mais natural.",
+            f"Tico: Boa! E quando a gente fala do mercado de trabalho, Tech? Como é que um estudante pode demonstrar que sabe aplicar esse conceito em uma entrevista de emprego ou num projeto do GitHub?",
+            f"Tech: Os recrutadores e líderes técnicos procuram pessoas que saibam explicar a resolução do problema com clareza. Não basta apenas postar o código no GitHub; é fundamental escrever um bom arquivo README explicando o contexto, o desafio enfrentado e as decisões técnicas que você tomou. Isso demonstra maturidade profissional!",
+            f"Tico: E para quem quer praticar hoje mesmo, qual seria o primeiro exercício prático recomendado?",
+            f"Tech: Comece criando pequenos scripts e projetos pessoais que resolvam dores simples do seu dia a dia. Pode ser uma planilha automatizada em Python, um pequeno script de organização de arquivos ou uma consulta simples a um banco de dados SQL. O importante é ver a tecnologia funcionando e gerar aquele sentimento de conquista!",
+            f"Tico: Incrível, Tech! Essa visão prática muda tudo. Certeza de que essa conversa vai dar uma clareza enorme para quem está nos ouvindo!"
         ])
         
     script_lines.extend([
         "\n[00:00] RECAPITULAÇÃO E DICAS DE ESTUDO",
-        "Sara: E assim chegamos à nossa recapitulação de hoje! Lembrem-se sempre: aprender tecnologia é uma maratona de constância, não um tiro de cem metros. Dedicar trinta minutos todos os dias vale dez vezes mais do que estudar dez horas seguidas só no fim de semana.",
-        "Léo: Com certeza, Sara! E para quem quiser aprofundar, todos os links das matérias e conteúdos recomendados estão salvos nas show notes do episódio e na nossa página oficial.",
-        "Sara: Um grande abraço a todos, bons estudos e até o próximo episódio!",
-        "Léo: Valeu pessoal, até a próxima!"
+        "Tech: E assim chegamos à nossa recapitulação de hoje! Lembrem-se sempre: aprender tecnologia é uma maratona de constância, não um tiro de cem metros. Dedicar trinta minutos todos os dias vale dez vezes mais do que estudar dez horas seguidas só no fim de semana.",
+        "Tico: Com certeza, Tech! E para quem quiser aprofundar, todos os links das matérias e conteúdos recomendados estão salvos nas show notes do episódio e na nossa página oficial.",
+        "Tech: Um grande abraço a todos, bons estudos e até o próximo episódio!",
+        "Tico: Valeu pessoal, até a próxima!"
     ])
     
     chapters.append(["19:00", "Recapitulação & Dicas Finais"])

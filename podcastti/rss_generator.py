@@ -4,10 +4,10 @@ import json
 from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
 
-PODCAST_TITLE = "PodCastTI - Tecnologia e Dados para Iniciantes"
+PODCAST_TITLE = "Tico & Tech - Tudo sobre Python, SQL & Lógica Descomplicada"
 PODCAST_LINK = "https://rapha-dias.github.io/PodCastTI"
-PODCAST_DESCRIPTION = "O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados para quem está começando na faculdade ou transição de carreira. ⏰ Novos episódios diariamente às 07:00 da manhã (horário de Brasília)."
-PODCAST_AUTHOR = "Léo & Sara"
+PODCAST_DESCRIPTION = "O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados com Tico e Tech. ⏰ Novos episódios diariamente às 07:00 da manhã (horário de Brasília)."
+PODCAST_AUTHOR = "Tico & Tech"
 PODCAST_EMAIL = os.environ.get("PODCAST_EMAIL", "rdias@live.com")
 PODCAST_IMAGE = "https://rapha-dias.github.io/PodCastTI/cover.jpg"
 PODCAST_CATEGORY = "Technology"
@@ -88,7 +88,7 @@ def add_new_episode(title, summary, script_text, audio_url, chapters, sources, a
     episodes = load_episodes()
     ep_num = len(episodes) + 1
     today_str = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
-    guid = f"podcastti-ep{ep_num:03d}-{datetime.now().strftime('%Y%m%d')}"
+    guid = f"ticotech-ep{ep_num:03d}-{datetime.now().strftime('%Y%m%d')}"
     
     show_notes = f"🎙️ SOBRE ESTE EPISÓDIO:\n{summary}\n\n⏱️ CAPÍTULOS E MARCAS DE TEMPO:\n"
     for idx, (time_mark, ch_title) in enumerate(chapters, 1):
