@@ -94,7 +94,7 @@ O podcast publica automaticamente no **Spotify** e outros agregadores através d
 
 ## 👤 Criador & Créditos
 
-- **Criado por:** Raphael Dias (`rdias@live.com`)
+- **Criado por:** Raphael Dias e Thiago Santis (`rdias@live.com`)
 - **Desenvolvido com:** Python, Edge-TTS, Gemini AI & GitHub Actions
 
 ---

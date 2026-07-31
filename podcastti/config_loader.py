@@ -18,9 +18,9 @@ def load_config():
         "podcast": {
             "title": "Tico & Tech - Tudo sobre Python, SQL & Lógica Descomplicada",
             "tagline": "Tudo sobre Python, SQL & Lógica Descomplicada",
-            "description": "O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL e Lógica de Programação com Tico e Tech. Novos episódios diariamente às 07:00 da manhã.\n\n🎙️ Criado por Raphael Dias\n🌐 Acesse nosso site oficial: https://rapha-dias.github.io/PodCastTI/",
+            "description": "O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL e Lógica de Programação com Tico e Tech. Novos episódios diariamente às 07:00 da manhã.\n\n🎙️ Criado por Raphael Dias e Thiago Santis\n🌐 Acesse nosso site oficial: https://rapha-dias.github.io/PodCastTI/",
             "author": "Tico & Tech",
-            "creator": "Raphael Dias",
+            "creator": "Raphael Dias e Thiago Santis",
             "email": "rdias@live.com",
             "link": "https://rapha-dias.github.io/PodCastTI",
             "spotify_link": "https://open.spotify.com/show/033XEfH7nMak9XeKKyUXmG",
