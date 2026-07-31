@@ -3,7 +3,10 @@
   <channel>
     <title>Tico &amp; Tech - Tudo sobre Python, SQL &amp; Lógica Descomplicada</title>
     <link>https://rapha-dias.github.io/PodCastTI</link>
-    <description>O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados com Tico e Tech. Novos episódios diariamente às 07:00 da manhã (horário de Brasília).</description>
+    <description>O podcast diário que traduz o 'tecniquês' em conversas leves sobre Python, SQL, Lógica de Programação e Ciência de Dados com Tico e Tech. Novos episódios diariamente às 07:00 da manhã (horário de Brasília).
+
+🎙️ Criado por Raphael Dias
+🌐 Acesse nosso site oficial: https://rapha-dias.github.io/PodCastTI/</description>
     <language>pt-br</language>
     <itunes:type>episodic</itunes:type>
     <itunes:author>Tico &amp; Tech</itunes:author>
