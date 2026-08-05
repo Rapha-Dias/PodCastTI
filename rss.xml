@@ -24,6 +24,30 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
+      <title>Ep 07: Destaques de TI: Guilherme Rodrigues - Apps Inteligentes No-Code e IA</title>
+      <description>🎙️ SOBRE ESTE EPISÓDIO:
+Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
+
+⏱️ CAPÍTULOS E MARCAS DE TEMPO:
+• 00:00 - Cap 01: INTRODUÇÃO
+• 00:37 - Cap 02: GUILHERME RODRIGUES - APPS INTELIGENTES NO-CODE E IA
+• 03:48 - Cap 03: SIBELIUS SERAPHINI - CONSTRUÇÃO DE UMA FINTECH
+• 06:53 - Cap 04: ESTRATÉGIA DE DADOS COM IA: O QUE É E COMO APLICAR
+• 09:53 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
+
+🔗 FONTES CITADAS E LINKS RECOMENDADOS:
+• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep50/
+• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep49/
+• Blog Alura: https://www.alura.com.br/artigos/estrategia-de-dados-com-ia
+</description>
+      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <guid isPermaLink="false">ticotech-ep007-20260805</guid>
+      <pubDate>Wed, 05 Aug 2026 12:02:06 +0000</pubDate>
+      <itunes:duration>00:10:28</itunes:duration>
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep07_podcastti_v2.mp3" length="3771792" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Ep 06: Destaques de TI: Julia Labs - Hardware, leds e Projetos criativos</title>
       <description>🎙️ SOBRE ESTE EPISÓDIO:
 Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
@@ -70,30 +94,6 @@ Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tuto
       <pubDate>Mon, 03 Aug 2026 12:56:48 +0000</pubDate>
       <itunes:duration>00:10:07</itunes:duration>
       <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep05_podcastti_v2.mp3" length="3646368" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Ep 04: Destaques de TI: Claude Fable 5 ajuda matemático a resolver problema de 87 anos</title>
-      <description>🎙️ SOBRE ESTE EPISÓDIO:
-Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
-
-⏱️ CAPÍTULOS E MARCAS DE TEMPO:
-• 00:00 - Cap 01: INTRODUÇÃO
-• 00:37 - Cap 02: CLAUDE FABLE 5 AJUDA MATEMÁTICO A RESOLVER PROBLEMA DE 87 ANOS
-• 03:40 - Cap 03: 🛡️ NEURALGUARD: LEVANDO O DETECTOR DE CÓDIGO VULNERÁVEL COM IA PARA O PULL REQUEST
-• 06:46 - Cap 04: TODO PAINEL DE USO DE IA É MEDIDOR DE COMBUSTÍVEL. EU TAMBÉM PRECISAVA DE UM VELOCÍMETRO, ENTÃO FIZ UM
-• 09:55 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
-
-🔗 FONTES CITADAS E LINKS RECOMENDADOS:
-• Blog Alura: https://www.alura.com.br/artigos/claude-fable-5-ajuda-matematico-a-resolver-problema
-• TabNews: https://www.tabnews.com.br/devfullstacknet/neuralguard-levando-o-detector-de-codigo-vulneravel-com-ia-para-o-pull-request
-• TabNews: https://www.tabnews.com.br/LucianoSouza/todo-painel-de-uso-de-ia-e-medidor-de-combustivel-eu-tambem-precisava-de-um-velocimetro-entao-fiz-um
-</description>
-      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
-      <itunes:explicit>no</itunes:explicit>
-      <guid isPermaLink="false">ticotech-ep004-20260802</guid>
-      <pubDate>Sun, 02 Aug 2026 11:19:14 +0000</pubDate>
-      <itunes:duration>00:10:30</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep04_podcastti_v2.mp3" length="3785904" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
