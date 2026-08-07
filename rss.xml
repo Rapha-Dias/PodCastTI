@@ -24,6 +24,30 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
+      <title>Ep 09: Destaques de TI: MVP com IA: o que é e como criar o seu passo a passo</title>
+      <description>🎙️ SOBRE ESTE EPISÓDIO:
+Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
+
+⏱️ CAPÍTULOS E MARCAS DE TEMPO:
+• 00:00 - Cap 01: INTRODUÇÃO
+• 00:37 - Cap 02: MVP COM IA: O QUE É E COMO CRIAR O SEU PASSO A PASSO
+• 03:38 - Cap 03: ESTÁ ACONTECENDO, A IA ESTÁ ROUBANDO SEU EMPREGO, MAS NÃO COMO VOCÊ IMAGINAVA
+• 06:43 - Cap 04: PITCH: COMO RESTAURAMOS GRUPOS DE ABAS SEM CONFIAR NOS IDS DO CHROME
+• 09:45 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
+
+🔗 FONTES CITADAS E LINKS RECOMENDADOS:
+• Blog Alura: https://www.alura.com.br/artigos/mvp-com-ia
+• TabNews: https://www.tabnews.com.br/rafaelfigueiredo/esta-acontecendo-a-ia-esta-roubando-seu-emprego-mas-nao-como-voce-imaginava
+• TabNews: https://www.tabnews.com.br/tabwell/pitch-como-restauramos-grupos-de-abas-sem-confiar-nos-ids-do-chrome
+</description>
+      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <guid isPermaLink="false">ticotech-ep009-20260807</guid>
+      <pubDate>Fri, 07 Aug 2026 10:56:30 +0000</pubDate>
+      <itunes:duration>00:10:21</itunes:duration>
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep09_podcastti_v2.mp3" length="3728304" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Ep 08: Destaques de TI: Como usar o Claude Code no Windows para aumentar produtividade?</title>
       <description>🎙️ SOBRE ESTE EPISÓDIO:
 Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
@@ -70,30 +94,6 @@ Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tuto
       <pubDate>Wed, 05 Aug 2026 12:02:06 +0000</pubDate>
       <itunes:duration>00:10:28</itunes:duration>
       <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep07_podcastti_v2.mp3" length="3771792" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Ep 06: Destaques de TI: Julia Labs - Hardware, leds e Projetos criativos</title>
-      <description>🎙️ SOBRE ESTE EPISÓDIO:
-Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
-
-⏱️ CAPÍTULOS E MARCAS DE TEMPO:
-• 00:00 - Cap 01: INTRODUÇÃO
-• 00:37 - Cap 02: JULIA LABS - HARDWARE, LEDS E PROJETOS CRIATIVOS
-• 03:44 - Cap 03: JESSICA TEMPORAL - COMO AS APLICAÇÕES SABEM QUEM É VOCÊ?
-• 06:54 - Cap 04: TÉO CALVO - O MAGO DAS CIÊNCIAS DE DADOS
-• 09:58 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
-
-🔗 FONTES CITADAS E LINKS RECOMENDADOS:
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep53/
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep52/
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep51/
-</description>
-      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
-      <itunes:explicit>no</itunes:explicit>
-      <guid isPermaLink="false">ticotech-ep006-20260804</guid>
-      <pubDate>Tue, 04 Aug 2026 12:03:43 +0000</pubDate>
-      <itunes:duration>00:10:34</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep06_podcastti_v2.mp3" length="3806064" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
