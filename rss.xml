@@ -24,6 +24,30 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
+      <title>Ep 11: Destaques de TI: Guilherme Rodrigues - Apps Inteligentes No-Code e IA</title>
+      <description>🎙️ SOBRE ESTE EPISÓDIO:
+Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
+
+⏱️ CAPÍTULOS E MARCAS DE TEMPO:
+• 00:00 - Cap 01: INTRODUÇÃO
+• 00:37 - Cap 02: GUILHERME RODRIGUES - APPS INTELIGENTES NO-CODE E IA
+• 03:48 - Cap 03: SIBELIUS SERAPHINI - CONSTRUÇÃO DE UMA FINTECH
+• 06:53 - Cap 04: A ELITE DA IA ESTÁ DEIXANDO A GOOGLE? | FABRÍCIO CARRARO OPINA
+• 09:52 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
+
+🔗 FONTES CITADAS E LINKS RECOMENDADOS:
+• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep50/
+• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep49/
+• Blog Alura: https://www.alura.com.br/artigos/a-elite-da-ia-esta-deixando-a-google
+</description>
+      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <guid isPermaLink="false">ticotech-ep011-20260809</guid>
+      <pubDate>Sun, 09 Aug 2026 10:39:03 +0000</pubDate>
+      <itunes:duration>00:10:28</itunes:duration>
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep11_podcastti_v2.mp3" length="3769200" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Ep 10: Destaques de TI: Julia Labs - Hardware, leds e Projetos criativos</title>
       <description>🎙️ SOBRE ESTE EPISÓDIO:
 Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
@@ -70,30 +94,6 @@ Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tuto
       <pubDate>Fri, 07 Aug 2026 10:56:30 +0000</pubDate>
       <itunes:duration>00:10:21</itunes:duration>
       <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep09_podcastti_v2.mp3" length="3728304" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Ep 08: Destaques de TI: Como usar o Claude Code no Windows para aumentar produtividade?</title>
-      <description>🎙️ SOBRE ESTE EPISÓDIO:
-Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
-
-⏱️ CAPÍTULOS E MARCAS DE TEMPO:
-• 00:00 - Cap 01: INTRODUÇÃO
-• 00:37 - Cap 02: COMO USAR O CLAUDE CODE NO WINDOWS PARA AUMENTAR PRODUTIVIDADE?
-• 03:35 - Cap 03: SKILLS &amp;AMP; GO: O QUE É O NOVO PROGRAMA DA ALURA + FIAP
-• 06:34 - Cap 04: LINKEDIN CRIA BOTÃO PARA DENUNCIAR POSTS FEITOS POR IA
-• 09:35 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
-
-🔗 FONTES CITADAS E LINKS RECOMENDADOS:
-• Blog Alura: https://www.alura.com.br/artigos/como-usar-o-claude-code-no-windows
-• Blog Alura: https://www.alura.com.br/artigos/o-que-e-skills-e-go
-• Blog Alura: https://www.alura.com.br/artigos/linkedin-cria-botao-para-denunciar-ia
-</description>
-      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
-      <itunes:explicit>no</itunes:explicit>
-      <guid isPermaLink="false">ticotech-ep008-20260806</guid>
-      <pubDate>Thu, 06 Aug 2026 12:05:21 +0000</pubDate>
-      <itunes:duration>00:10:11</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep08_podcastti_v2.mp3" length="3668112" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
