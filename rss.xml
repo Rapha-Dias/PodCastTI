@@ -24,6 +24,30 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
+      <title>Ep 16: Destaques de TI: "Ética em IA também é engenharia", diz Andressa Freires, da diversiData</title>
+      <description>🎙️ SOBRE ESTE EPISÓDIO:
+Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
+
+⏱️ CAPÍTULOS E MARCAS DE TEMPO:
+• 00:00 - Cap 01: INTRODUÇÃO
+• 00:37 - Cap 02: "ÉTICA EM IA TAMBÉM É ENGENHARIA", DIZ ANDRESSA FREIRES, DA DIVERSIDATA
+• 03:42 - Cap 03: "TRABALHAR DE FORMA SÍNCRONA COM 20 AGENTES VAI TE DEIXAR EXAUSTO", DIZ MATT VELLOSO, EX-META, MICROSOFT E GOOGLE
+• 07:01 - Cap 04: COMO PREPARAR DADOS PARA APLICAÇÕES COM LLMS: O GUIA COMPLETO
+• 10:00 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
+
+🔗 FONTES CITADAS E LINKS RECOMENDADOS:
+• Blog Alura: https://www.alura.com.br/artigos/etica-em-ia-tambem-e-engenharia
+• Blog Alura: https://www.alura.com.br/artigos/trabalhar-de-forma-sincrona-com-20-agentes-vai-te-deixar-exausto
+• Blog Alura: https://www.alura.com.br/artigos/estrategia-de-dados-para-llm
+</description>
+      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <guid isPermaLink="false">ticotech-ep016-20260814</guid>
+      <pubDate>Fri, 14 Aug 2026 10:59:56 +0000</pubDate>
+      <itunes:duration>00:10:36</itunes:duration>
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep16_podcastti_v2.mp3" length="3816144" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Ep 15: Destaques de TI: Guilherme Rodrigues - Apps Inteligentes No-Code e IA</title>
       <description>🎙️ SOBRE ESTE EPISÓDIO:
 Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
@@ -70,30 +94,6 @@ Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tuto
       <pubDate>Wed, 12 Aug 2026 11:02:38 +0000</pubDate>
       <itunes:duration>00:10:34</itunes:duration>
       <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep14_podcastti_v2.mp3" length="3806064" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Ep 13: Destaques de TI: Reestruturação no Google DeepMind muda comando da divisão de IA</title>
-      <description>🎙️ SOBRE ESTE EPISÓDIO:
-Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
-
-⏱️ CAPÍTULOS E MARCAS DE TEMPO:
-• 00:00 - Cap 01: INTRODUÇÃO
-• 00:37 - Cap 02: REESTRUTURAÇÃO NO GOOGLE DEEPMIND MUDA COMANDO DA DIVISÃO DE IA
-• 03:39 - Cap 03: CHATGPT COMEÇA A TESTAR ANÚNCIOS PARA USUÁRIOS NO BRASIL
-• 06:36 - Cap 04: OPENAI REVELA ASTRA, MODELO QUE AVANÇOU EM DEZ PROBLEMAS MATEMÁTICOS
-• 09:36 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
-
-🔗 FONTES CITADAS E LINKS RECOMENDADOS:
-• Blog Alura: https://www.alura.com.br/artigos/reestruturacao-no-google-deepmind
-• Blog Alura: https://www.alura.com.br/artigos/chatgpt-comeca-a-testar-anuncios-para-usuarios-no-brasil
-• Blog Alura: https://www.alura.com.br/artigos/openai-revela-astra
-</description>
-      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
-      <itunes:explicit>no</itunes:explicit>
-      <guid isPermaLink="false">ticotech-ep013-20260811</guid>
-      <pubDate>Tue, 11 Aug 2026 10:53:33 +0000</pubDate>
-      <itunes:duration>00:10:11</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep13_podcastti_v2.mp3" length="3671136" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
