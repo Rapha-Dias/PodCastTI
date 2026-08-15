@@ -24,6 +24,30 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
+      <title>Ep 17: Destaques de TI: "O gargalo hoje é saber o que fazer", diz Filipe Lauar, engenheiro de IA na Enter e host do podcast Vida com IA</title>
+      <description>🎙️ SOBRE ESTE EPISÓDIO:
+Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
+
+⏱️ CAPÍTULOS E MARCAS DE TEMPO:
+• 00:00 - Cap 01: INTRODUÇÃO
+• 00:37 - Cap 02: "O GARGALO HOJE É SABER O QUE FAZER", DIZ FILIPE LAUAR, ENGENHEIRO DE IA NA ENTER E HOST DO PODCAST VIDA COM IA
+• 03:50 - Cap 03: CRIEI O L2CACHE: UMA CAMADA DE MEMÓRIA LOCAL NO MACOS PARA DESENVOLVEDORES
+• 06:54 - Cap 04: PITCH: CONSTRUÍ UM FRAMEWORK JAVA DO ZERO PARA PROVAR QUE A BASE IMPORTA
+• 09:55 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
+
+🔗 FONTES CITADAS E LINKS RECOMENDADOS:
+• Blog Alura: https://www.alura.com.br/artigos/o-gargalo-hoje-e-saber-o-que-fazer-diz-filipe-lauar
+• TabNews: https://www.tabnews.com.br/dindina/criei-o-l2cache-uma-camada-de-memoria-local-no-macos-para-desenvolvedores-indexacao-de-terminal-jwt-json-gratis-no-lancamento
+• TabNews: https://www.tabnews.com.br/ronerjr/construi-um-framework-java-do-zero-para-provar-que-a-base-importa
+</description>
+      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <guid isPermaLink="false">ticotech-ep017-20260815</guid>
+      <pubDate>Sat, 15 Aug 2026 10:26:50 +0000</pubDate>
+      <itunes:duration>00:10:31</itunes:duration>
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep17_podcastti_v2.mp3" length="3788064" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Ep 16: Destaques de TI: "Ética em IA também é engenharia", diz Andressa Freires, da diversiData</title>
       <description>🎙️ SOBRE ESTE EPISÓDIO:
 Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
@@ -70,30 +94,6 @@ Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tuto
       <pubDate>Thu, 13 Aug 2026 11:03:06 +0000</pubDate>
       <itunes:duration>00:10:32</itunes:duration>
       <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep15_podcastti_v2.mp3" length="3794256" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Ep 14: Destaques de TI: Julia Labs - Hardware, leds e Projetos criativos</title>
-      <description>🎙️ SOBRE ESTE EPISÓDIO:
-Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
-
-⏱️ CAPÍTULOS E MARCAS DE TEMPO:
-• 00:00 - Cap 01: INTRODUÇÃO
-• 00:37 - Cap 02: JULIA LABS - HARDWARE, LEDS E PROJETOS CRIATIVOS
-• 03:44 - Cap 03: JESSICA TEMPORAL - COMO AS APLICAÇÕES SABEM QUEM É VOCÊ?
-• 06:54 - Cap 04: TÉO CALVO - O MAGO DAS CIÊNCIAS DE DADOS
-• 09:58 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
-
-🔗 FONTES CITADAS E LINKS RECOMENDADOS:
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep53/
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep52/
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep51/
-</description>
-      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
-      <itunes:explicit>no</itunes:explicit>
-      <guid isPermaLink="false">ticotech-ep014-20260812</guid>
-      <pubDate>Wed, 12 Aug 2026 11:02:38 +0000</pubDate>
-      <itunes:duration>00:10:34</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep14_podcastti_v2.mp3" length="3806064" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
