@@ -24,6 +24,30 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
+      <title>Ep 18: Destaques de TI: Julia Labs - Hardware, leds e Projetos criativos</title>
+      <description>🎙️ SOBRE ESTE EPISÓDIO:
+Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
+
+⏱️ CAPÍTULOS E MARCAS DE TEMPO:
+• 00:00 - Cap 01: INTRODUÇÃO
+• 00:37 - Cap 02: JULIA LABS - HARDWARE, LEDS E PROJETOS CRIATIVOS
+• 03:44 - Cap 03: JESSICA TEMPORAL - COMO AS APLICAÇÕES SABEM QUEM É VOCÊ?
+• 06:54 - Cap 04: TÉO CALVO - O MAGO DAS CIÊNCIAS DE DADOS
+• 09:58 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
+
+🔗 FONTES CITADAS E LINKS RECOMENDADOS:
+• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep53/
+• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep52/
+• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep51/
+</description>
+      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <guid isPermaLink="false">ticotech-ep018-20260816</guid>
+      <pubDate>Sun, 16 Aug 2026 10:27:14 +0000</pubDate>
+      <itunes:duration>00:10:34</itunes:duration>
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep18_podcastti_v2.mp3" length="3806064" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Ep 17: Destaques de TI: "O gargalo hoje é saber o que fazer", diz Filipe Lauar, engenheiro de IA na Enter e host do podcast Vida com IA</title>
       <description>🎙️ SOBRE ESTE EPISÓDIO:
 Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
@@ -70,30 +94,6 @@ Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tuto
       <pubDate>Fri, 14 Aug 2026 10:59:56 +0000</pubDate>
       <itunes:duration>00:10:36</itunes:duration>
       <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep16_podcastti_v2.mp3" length="3816144" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Ep 15: Destaques de TI: Guilherme Rodrigues - Apps Inteligentes No-Code e IA</title>
-      <description>🎙️ SOBRE ESTE EPISÓDIO:
-Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
-
-⏱️ CAPÍTULOS E MARCAS DE TEMPO:
-• 00:00 - Cap 01: INTRODUÇÃO
-• 00:37 - Cap 02: GUILHERME RODRIGUES - APPS INTELIGENTES NO-CODE E IA
-• 03:48 - Cap 03: SIBELIUS SERAPHINI - CONSTRUÇÃO DE UMA FINTECH
-• 06:53 - Cap 04: ATUALIZAÇÕES DA ALURA #2: IA, CARREIRAS E FUNCIONALIDADES PARA SUA CARREIRA
-• 09:56 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
-
-🔗 FONTES CITADAS E LINKS RECOMENDADOS:
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep50/
-• freeCodeCamp PT: https://www.freecodecamp.org/portuguese/news/podcast-ep49/
-• Blog Alura: https://www.alura.com.br/artigos/atualizacoes-da-alura-2
-</description>
-      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
-      <itunes:explicit>no</itunes:explicit>
-      <guid isPermaLink="false">ticotech-ep015-20260813</guid>
-      <pubDate>Thu, 13 Aug 2026 11:03:06 +0000</pubDate>
-      <itunes:duration>00:10:32</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep15_podcastti_v2.mp3" length="3794256" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
