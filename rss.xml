@@ -24,6 +24,30 @@
     <itunes:image href="https://rapha-dias.github.io/PodCastTI/cover.jpg" />
     <itunes:category text="Technology" />
     <item>
+      <title>Ep 20: Destaques de TI: Google DeepMind testa IA médica que analisa vídeo em tempo real</title>
+      <description>🎙️ SOBRE ESTE EPISÓDIO:
+Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
+
+⏱️ CAPÍTULOS E MARCAS DE TEMPO:
+• 00:00 - Cap 01: INTRODUÇÃO
+• 00:37 - Cap 02: GOOGLE DEEPMIND TESTA IA MÉDICA QUE ANALISA VÍDEO EM TEMPO REAL
+• 03:38 - Cap 03: GOOGLE DEEPMIND LANÇA IA QUE TRADUZ LÍNGUA DE SINAIS EM TEXTO
+• 06:40 - Cap 04: ANTHROPIC IRÁ MARCAR TEXTOS DE IA DO CLAUDE COM MARCA D'ÁGUA INVISÍVEL
+• 09:41 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
+
+🔗 FONTES CITADAS E LINKS RECOMENDADOS:
+• Blog Alura: https://www.alura.com.br/artigos/google-deepmind-testa-ia-medica
+• Blog Alura: https://www.alura.com.br/artigos/ia-que-traduz-lingua-de-sinais-em-texto
+• Blog Alura: https://www.alura.com.br/artigos/anthropic-ira-marcar-textos-de-ia-do-claude-com-marca-dagua-invisivel
+</description>
+      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <guid isPermaLink="false">ticotech-ep020-20260818</guid>
+      <pubDate>Tue, 18 Aug 2026 10:32:39 +0000</pubDate>
+      <itunes:duration>00:10:16</itunes:duration>
+      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep20_podcastti_v2.mp3" length="3700800" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Ep 19: Destaques de TI: Guilherme Rodrigues - Apps Inteligentes No-Code e IA</title>
       <description>🎙️ SOBRE ESTE EPISÓDIO:
 Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
@@ -70,30 +94,6 @@ Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tuto
       <pubDate>Sun, 16 Aug 2026 10:27:14 +0000</pubDate>
       <itunes:duration>00:10:34</itunes:duration>
       <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep18_podcastti_v2.mp3" length="3806064" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Ep 17: Destaques de TI: "O gargalo hoje é saber o que fazer", diz Filipe Lauar, engenheiro de IA na Enter e host do podcast Vida com IA</title>
-      <description>🎙️ SOBRE ESTE EPISÓDIO:
-Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!
-
-⏱️ CAPÍTULOS E MARCAS DE TEMPO:
-• 00:00 - Cap 01: INTRODUÇÃO
-• 00:37 - Cap 02: "O GARGALO HOJE É SABER O QUE FAZER", DIZ FILIPE LAUAR, ENGENHEIRO DE IA NA ENTER E HOST DO PODCAST VIDA COM IA
-• 03:50 - Cap 03: CRIEI O L2CACHE: UMA CAMADA DE MEMÓRIA LOCAL NO MACOS PARA DESENVOLVEDORES
-• 06:54 - Cap 04: PITCH: CONSTRUÍ UM FRAMEWORK JAVA DO ZERO PARA PROVAR QUE A BASE IMPORTA
-• 09:55 - Cap 05: RECAPITULAÇÃO E DICAS DE ESTUDO
-
-🔗 FONTES CITADAS E LINKS RECOMENDADOS:
-• Blog Alura: https://www.alura.com.br/artigos/o-gargalo-hoje-e-saber-o-que-fazer-diz-filipe-lauar
-• TabNews: https://www.tabnews.com.br/dindina/criei-o-l2cache-uma-camada-de-memoria-local-no-macos-para-desenvolvedores-indexacao-de-terminal-jwt-json-gratis-no-lancamento
-• TabNews: https://www.tabnews.com.br/ronerjr/construi-um-framework-java-do-zero-para-provar-que-a-base-importa
-</description>
-      <itunes:summary>Neste episódio completo do Tico &amp; Tech, Tico e Tech mergulham fundo em tutoriais, conceitos essenciais de Python, SQL e Lógica Descomplicada para estudantes e iniciantes!</itunes:summary>
-      <itunes:explicit>no</itunes:explicit>
-      <guid isPermaLink="false">ticotech-ep017-20260815</guid>
-      <pubDate>Sat, 15 Aug 2026 10:26:50 +0000</pubDate>
-      <itunes:duration>00:10:31</itunes:duration>
-      <enclosure url="https://rapha-dias.github.io/PodCastTI/episodes/ep17_podcastti_v2.mp3" length="3788064" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
